@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Tema: Web Storage - localstorage y sessionstorage 
+alumno: Carlos Boni
+fecha: 18 enero
+-->
+
+<head>
+	<title>HTML5 - WebStorage - sessionStorage</title>
+	<meta charset="UTF-8"/>  
+	
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+
+</head>
+
+
+<body>
+	<header>
+		<h1>Ejemplo Session Storage</h1>
+		<p>Contador de cargas de pagina </p>
+	</header>
+			<a href="09-mar-contador-1DAM.html">Ir a esta página</a>
+			<!-- creamos un elemento vacío para luego poner allí el resultado
+			de nuestro script -->
+			<br/>
+			<div id="mensaje"></div>		
+<script>
+	// seccion de codigo javascript 
+	actualizar();
+//	var x=document.url();
+//	var y="productos"
+	
+	function actualizar() {
+		if(sessionStorage.contador) {
+			// el contador existe; ya fue creado y lo actualizamos
+			// var x=sessionStorage.getItem("contador")+1;
+			sessionStorage.contador = Number(sessionStorage.contador) + 1;
+		}
+		else {
+			sessionStorage.setItem("contador", 1);
+		}
+		
+		// mostramos el estado actual del contador
+		$("#mensaje").text('Has cargado ' + sessionStorage.contador + ' páginas del sitio.');
+	}
+	
+
+	
+</script>
+</body>
+</html>
+
+
+

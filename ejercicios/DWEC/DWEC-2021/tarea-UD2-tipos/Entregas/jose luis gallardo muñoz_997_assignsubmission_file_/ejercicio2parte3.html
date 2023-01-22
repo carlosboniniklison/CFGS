@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+    
+</head>
+
+<body>
+
+    <script>  
+		//jose luis gallardo muñoz
+        let aux3 = true;
+         document.write(typeof(aux3)+" \ "+aux3+'<br>');
+        while(aux3){           
+      let  aux  = prompt('Ingrese algo de numero 1'+'<br>');
+            document.write(typeof(aux));
+          while(isNaN(aux)){ 
+            if(!isNaN(aux)){ 
+            parseInt(aux);
+            document.write(typeof(aux));
+            }else{
+            document.write("error no es un numero vuelva a ingrasar un numero"+'<br>');    
+             aux  = prompt('Ingrese numero 1'+'<br>');
+             document.write(typeof(aux));
+            }
+          }
+            
+       let  aux2  = prompt('Ingrese algo de numero 2'+'<br>');
+            document.write(typeof(aux2));
+          while(isNaN(aux2)){ 
+            if(!isNaN(aux2)){ 
+            parseInt(aux2);
+            document.write(typeof(aux2));
+            }else{
+            document.write("error no es un numero vuelva a ingrasar un numero"+'<br>');    
+             aux2  = prompt('Ingrese numero 2'+'<br>');
+             document.write(typeof(aux2));
+            }
+          }  
+    
+                      
+        if (aux>20){
+             document.write(typeof(aux)+" \ "+aux +" es mayor que 20"+'<br>');
+        }else{
+             document.write(typeof(aux)+" \ "+aux +" no es mayor que 20"+'<br>');
+        }
+        if (aux2>20){
+             document.write(typeof(aux2)+" \ "+aux2 +" es mayor que 20"+'<br>');
+        }else{
+             document.write(typeof(aux2)+" \ "+aux2 +" no es mayor que 20"+'<br>');
+        }        
+          let  aux4 = prompt('si quieres acabar el programa pon FIN');
+             document.write(typeof(aux4)+" \ "+aux4+'<br>');
+            
+            if (aux4=='FIN'){
+             aux3=false   
+                 document.write(typeof(aux3)+" \ "+aux3+'<br>');             
+            }
+        }
+     
+    </script>
+
+</body>
+
+</html>

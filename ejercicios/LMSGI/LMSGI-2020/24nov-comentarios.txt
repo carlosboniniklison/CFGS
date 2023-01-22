@@ -1,0 +1,5 @@
+1. cambiar el orden porque el float así no va a funcionar bien.
+2. hay que identificar los div para poder darles formato.
+3. y si ponemos el H1 en el bloque cabecera?
+4. class e id son lo mismo?
+

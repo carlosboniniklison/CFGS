@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina: CSS variables dia y noche
+autor: Prof. Carlos Boni
+fecha: Mayo 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>Ejercicios con variables CSS</title>
+	
+	<!-- una hoja de estilos personalizada-->
+	<link href="estilos.css" rel="stylesheet"/>
+	
+
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+	<script src="modo.js"></script>
+	
+</head>
+
+
+<body onload="ponerModo('dia')">
+
+	<!-- cabecera de pagina -->
+	<header>
+		<h1>MODO <span id="modo">DIA-NOCHE</span></h1>
+		<h3>Usando jQuery y variables CSS</h3>
+		<br/>
+		<button id="mensajeBoton" onclick="ponerModo('')">Comenzar</button>
+		<br/>
+	</header>
+	
+	<!-- bloque de contenido de la pagina -->
+	<main>
+
+
+	</main>
+
+
+	<!-- pie de pagina -->
+	<footer>
+		<br/><br/><br/>
+		<div>&copy; 2021 <a href="https://carlosboni.com" target="_blank">Prof. Carlos Boni</a></div>
+	</footer>
+
+
+</body>
+</html>

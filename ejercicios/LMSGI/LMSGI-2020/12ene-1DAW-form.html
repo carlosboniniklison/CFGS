@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+web o pagina:
+alumno:
+fecha:
+-->
+
+<head>
+  <title>Validación de Formularios</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="12ene-1DAW-form.css">
+    <style>
+	/* aquí estilos aplicados solo a esta pagina */
+	
+  </style>
+  <script>
+	// seccion de codigo javascript 
+  </script>
+</head>
+
+
+<body>
+
+<h1>Formulario con validaciones en lado cliente</h1>
+
+<form name="miFormulario" onSubmit="return 12ene-1DAW-form()">
+  <label for="fname">Nombre:</label><br>
+  <input type="text" id="fname" name="nombre" maxlength="20" required><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="correo" required><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+  // seccion de codigo javascript 
+ function 12ene-1DAW-form() {
+  window.alert(document.forms["miFormulario"]["nombre"].value+' '+document.forms["miFormulario"]["correo"].value)
+  return false; 
+  
+ }
+ 
+</script>
+</body>
+</html>

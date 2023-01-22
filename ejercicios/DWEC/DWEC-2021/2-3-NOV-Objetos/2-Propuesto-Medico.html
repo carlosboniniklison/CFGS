@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina:
+entorno: curso LENG MARCAS
+autor: Carlos Boni
+fecha: Octubre 2021
+ENUNCIADO: Define un tipo de objeto Medico en JavaScript que tenga como propiedades: nombre (String),
+personasCuradas (número entero), especialidad (String) y como métodos un método denominado
+curarPersona y otro método denominado mostrarDatos. El método curarPersona deberá añadir una
+unidad al valor de la propiedad personasCuradas y el método mostrarDatos deberá mostrar los datos el
+médico. Por ejemplo, “El médico se llama Juan Eslava, su especialidad es traumatología y lleva curadas
+8 personas”. Crea dos objetos del tipo definido, e invoca sus métodos para comprobar que funcionan
+correctamente.
+Crea las dos alternativas de código: métodos con funciones internas anónimas o métodos con
+referencia a funciones externas.
+Para comprobar si tus respuestas
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- polyfill para soportar CSS3 Media Queries en MS explorer viejos -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+
+    <!-- importante SEO para la etiqueta del navegador -->
+    <title>Medico - Objetos predefinidos JS</title>
+
+    <!-- una fuente de Google, mejor en CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet" />
+
+    <!-- una hoja de estilos externa-->
+    <link href="https://miweb.com/00-modelo.css" rel="stylesheet" type="text/css" />
+
+    <!-- una hoja de estilos personalizada-->
+    <link href="00-modelo.css" rel="stylesheet" type="text/css" />
+
+    <!-- iconos u otros elementos externos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+    <!-- Mejor en fichero externo; solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+        * {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        body {
+            background: rgba(0, 0, 128, 0.1);
+            /* Azul al 10% */
+        }
+    </style>
+
+    <!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+    <script src="00-modelo.js"></script>
+
+    <!-- scripts personalizados Javascript o JQuery -->
+    <script>
+		// aqui el codigo ...
+    </script>
+</head>
+
+
+<body>
+
+    <!-- cabecera de pagina -->
+    <header>
+        <h1>Objetos predefinidos JS</h1>
+        <h2>Médico - ejercicio propuesto</h2>
+        <br />
+    </header>
+    <form action="javascript:void(0);">
+        <p>Nombre del médico:</p>
+        <input type="string" name="nombre" required>
+        <input type="submit" onclick="validar()">
+    </form>
+    
+
+
+    <div style="color:blue;" id="pulsador" onclick="ejemploObjetos()"> Probar </div>
+
+    <!-- pie de pagina -->
+    <footer>
+        <br /><br /><br />
+        <div>&copy; 2021 <a href="https://carlosboni.com" target="_blank">Prof. Carlos Boni</a></div>
+    </footer>
+
+    <script>
+        // seccion de codigo javascript
+        function medico(nom,pers,esp) {
+            this.nombre = nom;
+            this.personasCuradas = parseInt(pers);
+            this.especialidad = esp;
+            this.curarPersonas = function(){};
+            this.mostrarDatos = function(){}
+        }
+        function obtenerSuma() {
+            var suma = 0;
+            for (var i = 0; i < this.contenidoArray.length; i++) { suma = suma + this.contenidoArray[i]; }
+            return suma;
+        }
+        function ejemploObjetos() {
+            var suma = 0; var serie = [3, 2, 9];
+            for (var i = 0; i < serie.length; i++) { suma = suma + serie[i]; }
+            alert('La suma de los números visto como array simple es: ' + suma);
+            serieOb = new objetoSerie(serie);
+            alert('La suma de los números visto como objeto es: ' + serieOb.suma());
+            otroObjeto = new objetoSerie([2, 1, 3, 4]); alert('La suma para otro objeto es: ' + otroObjeto.suma());
+        }
+    </script>
+</body>
+
+</html>

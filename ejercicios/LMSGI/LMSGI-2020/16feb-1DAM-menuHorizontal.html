@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina: menu horizontal genérico
+autor: Carlos Boni
+fecha: Febrero 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>Menú Horizontal</title>
+	
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+	
+	<!-- una hoja de estilos externa-->
+	
+	<!-- una hoja de estilos personalizada-->
+	<link href="00-modelo.css" rel="stylesheet"/>
+	
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+		body {
+			background-color: rgba(0, 0, 128, 0.1); /* Azul al 10% */
+			margin:0px;
+		}
+		
+		nav {
+			min-height:60px;
+			max-height:100px;
+			display:flex;
+			width:100%;
+			background-color: black;
+			color:white;	
+		}
+		
+		nav > div {
+			width:16.6%;
+			background-color: black;
+			color:white;	
+			padding-left:5px;
+			padding-right:5px;
+			padding-top:10px;
+			border-width:3px;
+			border-color:yellow;
+		}
+		
+		li {
+			display:block;
+		}
+		
+		@media screen and (max-width:600px) {
+			nav {
+				display:block;
+			}
+			nav > div {
+				width: 100%;
+			}
+		}
+		
+		
+	</style>
+	
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+	<script src="00-modelo.js"></script>
+	
+	<!-- scripts personalizados Javascript o JQuery -->
+	<script>
+		// aqui el codigo ...
+	</script>
+</head>
+
+
+<body>
+
+	<!-- cabecera de pagina -->
+	<header>
+		<h1>MENÚ HORIZONTAL</h1>
+		<br/>
+		
+	</header>
+	
+	<nav>
+		<div id="div1">
+			<details>
+				<summary>Opción 1</summary>
+				<ul>
+					<li> <a href="#">Opc 1.1.</a></li>
+					<li> <a href="#">Opc 1.2.</a></li>
+					<li> <a href="#">Opc 1.3.</a></li>
+					<li> <a href="#">Opc 1.4.</a>
+					
+						<details>
+							<summary>Opción 4.5</summary>
+							<ul>
+								<li> <a href="#">Opc 4.5.1.</a></li>
+								<li> <a href="#">Opc 4.5.2.</a></li>
+								<li> <a href="#">Opc 4.5.3.</a></li>
+								<li> <a href="#">Opc 4.5.4.</a></li>
+							</ul>
+						</details>
+					</li>
+				</ul>
+			</details>
+		</div>
+		<div id="div2">
+			<details>
+				<summary>Opción 2</summary>
+				<ul>
+					<li> <a href="#">Opc 4.1.</a></li>
+					<li> <a href="#">Opc 4.2.</a></li>
+					<li> <a href="#">Opc 4.3.</a></li>
+					<li> <a href="#">Opc 4.4.</a>
+					
+						<details>
+							<summary>Opción 4.5</summary>
+							<ul>
+								<li> <a href="#">Opc 4.5.1.</a></li>
+								<li> <a href="#">Opc 4.5.2.</a></li>
+								<li> <a href="#">Opc 4.5.3.</a></li>
+								<li> <a href="#">Opc 4.5.4.</a></li>
+							</ul>
+						</details>
+					</li>
+				</ul>
+			</details>
+		</div>
+		<div id="div3">
+			<details>
+				<summary>Opción 3</summary>
+				<ul>
+					<li> <a href="#">Opc 4.1.</a></li>
+					<li> <a href="#">Opc 4.2.</a></li>
+					<li> <a href="#">Opc 4.3.</a></li>
+					<li> <a href="#">Opc 4.4.</a>
+					
+						<details>
+							<summary>Opción 4.5</summary>
+							<ul>
+								<li> <a href="#">Opc 4.5.1.</a></li>
+								<li> <a href="#">Opc 4.5.2.</a></li>
+								<li> <a href="#">Opc 4.5.3.</a></li>
+								<li> <a href="#">Opc 4.5.4.</a></li>
+							</ul>
+						</details>
+					</li>
+				</ul>
+			</details>
+		</div>
+		<div id="div4">
+			<details>
+				<summary>Opción 4</summary>
+				<ul>
+					<li> <a href="#">Opc 4.1.</a></li>
+					<li> <a href="#">Opc 4.2.</a></li>
+					<li> <a href="#">Opc 4.3.</a></li>
+					<li> <a href="#">Opc 4.4.</a>
+					
+						<details>
+							<summary>Opción 4.5</summary>
+							<ul>
+								<li> <a href="#">Opc 4.5.1.</a></li>
+								<li> <a href="#">Opc 4.5.2.</a></li>
+								<li> <a href="#">Opc 4.5.3.</a></li>
+								<li> <a href="#">Opc 4.5.4.</a></li>
+							</ul>
+						</details>
+					</li>
+				</ul>
+			</details>
+		</div>
+		<div id="div5">
+			<details>
+				<summary>Opción 5</summary>
+				<ul>
+					<li> <a href="#">Opc 4.1.</a></li>
+					<li> <a href="#">Opc 4.2.</a></li>
+					<li> <a href="#">Opc 4.3.</a></li>
+					<li> <a href="#">Opc 4.4.</a>
+					
+						<details>
+							<summary>Opción 4.5</summary>
+							<ul>
+								<li> <a href="#">Opc 4.5.1.</a></li>
+								<li> <a href="#">Opc 4.5.2.</a></li>
+								<li> <a href="#">Opc 4.5.3.</a></li>
+								<li> <a href="#">Opc 4.5.4.</a></li>
+							</ul>
+						</details>
+					</li>
+				</ul>
+			</details>
+		</div>
+		<div id="div6">
+			<details>
+				<summary>Opción 6</summary>
+				<ul>
+					<li> <a href="#">Opc 4.1.</a></li>
+					<li> <a href="#">Opc 4.2.</a></li>
+					<li> <a href="#">Opc 4.3.</a></li>
+					<li> <a href="#">Opc 4.4.</a>
+					
+						<details>
+							<summary>Opción 4.5</summary>
+							<ul>
+								<li> <a href="#">Opc 4.5.1.</a></li>
+								<li> <a href="#">Opc 4.5.2.</a></li>
+								<li> <a href="#">Opc 4.5.3.</a></li>
+								<li> <a href="#">Opc 4.5.4.</a></li>
+							</ul>
+						</details>
+					</li>
+				</ul>
+			</details>
+		</div>
+	</nav>
+	
+	<!-- bloque de contenido de la pagina -->
+	<main>
+
+	</main>
+
+
+	<!-- pie de pagina -->
+	<footer>
+		<br/><br/><br/>
+		<div>&copy; 2020 <a href="https://carlosboni.com" target="_blank">Prof. Carlos Boni</a></div>
+	</footer>
+
+	<script>
+		// seccion de codigo javascript 
+
+	</script>
+</body>
+</html>

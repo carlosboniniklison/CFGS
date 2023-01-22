@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina: Ejercicios HTML-CSS
+autor: Carlos Boni
+fecha: Febrero 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>Grillas</title>
+	
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+	
+	<!-- una hoja de estilos externa-->
+	
+	<!-- una hoja de estilos personalizada-->
+	<link href="00-modelo.css" rel="stylesheet"/>
+	
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+		* {
+			font-family: 'Nunito', sans-serif;
+			box-sizing:border-box;
+		}
+		
+		body {
+			background-color: rgba(255, 255, 255, 1); /* blanco */
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		.grid-container {
+		  display: grid;
+		  grid-template-columns: 1fr 2fr;
+		  grid-gap: 5px;
+		  padding: 5px;
+		}
+
+		.grid-container > div {
+		  background-color: rgba(0, 0, 0, 0.2);  /* oscurece un poco */	
+		  text-align: center;
+		  padding: 0px;
+		  font-size: 30px;
+		}
+
+		.item1 {
+			grid-column: 1 / span 2;
+			color:white;
+			background-color: black; /* negro */		
+		}
+
+
+		
+	</style>
+	
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+	<script src="00-modelo.js"></script>
+	
+	<!-- scripts personalizados Javascript o JQuery -->
+	<script>
+		// aqui el codigo ...
+	</script>
+</head>
+
+
+<body>
+
+	<!-- cabecera de pagina -->
+	
+	
+	<!-- bloque de contenido de la pagina -->
+	<main>
+		
+		<div class="grid-container">
+		  <div class="item1">Grillas</div>
+		  <div class="item2">2</div>
+		  <div class="item3"><p>You can refer to line numbers when placing grid items.</p></div>
+		</div>
+
+	</main>
+
+
+	<!-- pie de pagina -->
+	<footer>
+		<br/><br/><br/>
+		<div>&copy; 2020 <a href="https://carlosboni.com" target="_blank">Prof. Carlos Boni</a></div>
+	</footer>
+
+	<script>
+		// seccion de codigo javascript 
+
+	</script>
+</body>
+</html>

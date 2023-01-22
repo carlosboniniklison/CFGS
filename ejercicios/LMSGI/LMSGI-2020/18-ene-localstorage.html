@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Tema: Web Storage - localstorage y sessionstorage 
+alumno: Carlos Boni
+fecha: 18 enero
+-->
+
+<head>
+  <title>HTML5 - WebStorage - localStorage</title>
+  <meta charset="UTF-8"/>  
+</head>
+
+
+<body>
+	<header>
+		<h1>Ejemplo Local Storage</h1>
+		<p>Es una forma de almacenar información en el navegador lado 
+		cliente en lugar de usar cookies</p>
+	</header>
+			<form name="miFormulario" onSubmit="return guardar()">
+			  <label for="apellido">Apellido:</label><br>
+			  <input type="text" id="apellido" name="apellido" maxlength="10" required><br>
+			  <input type="submit" value="Guardar">
+			</form>
+			<!-- creamos un elemento vacío para luego poner allí el resultado
+			de nuestro script -->
+			<br/>
+			<div id="mensaje"></div>		
+<script>
+  // seccion de codigo javascript 
+		// Valida que el browser lo permita
+	document.getElementById("mensaje").innerHTML = localStorage.getItem("apellido");
+	
+	function guardar(){
+		if (typeof(Storage) !== "undefined") {
+		  // Almacena un valor usando el método setItem del objeto localStorage
+		  var x=document.forms["miFormulario"]["apellido"].value;
+		  localStorage.setItem("apellido", x);
+		  // Recupera el valor usando el método getItem del objeto localStorage
+		  document.getElementById("mensaje").innerHTML = localStorage.getItem("apellido");
+		} else {
+		  document.getElementById("mensaje").innerHTML = "Este navegador no soporta web storage...";
+		}
+		return false;
+	}
+</script>
+</body>
+</html>
+
+
+

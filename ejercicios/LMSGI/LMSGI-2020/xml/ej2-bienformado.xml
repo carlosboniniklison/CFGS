@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filmoteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///G:/xampp/htdocs/profesorcarlos.es/1DAW-LLMM/xml/ej2-bienformado.xsd">
+	<pelicula genero="Comedia">	  
+	  <director>Billy Wilder</director>
+	  <titulo>Con faldas y a lo loco</titulo>
+	</pelicula>
+	<pelicula genero="Terror">
+	  <director>Malcolm D. Lee</director>
+	  <director>Kinen Ivory Wyanne</director>
+	  <director>David Zucher</director>
+	  <titulo>Scary Movie</titulo>
+	</pelicula>
+	<pelicula genero="Drama">
+	  <titulo>Sopa de ganso</titulo>
+	</pelicula>
+	<autor>barto</autor>
+</filmoteca>

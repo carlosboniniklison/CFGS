@@ -1,0 +1,14 @@
+ El volumen de la unidad C es 1DAM
+ El n£mero de serie del volumen es: C610-C70A
+
+ Directorio de c:\Program Files\Microsoft Office\root\fre
+
+31/08/2020  12:08           125.179 StartMenu_Win10.mp4
+31/08/2020  12:08           118.299 StartMenu_Win10_RTL.mp4
+31/08/2020  12:08           104.296 StartMenu_Win8.mp4
+31/08/2020  12:08           104.960 StartMenu_Win8_RTL.mp4
+               4 archivos        452.734 bytes
+
+     Total de archivos en la lista:
+               4 archivos        452.734 bytes
+               0 dirs  195.602.825.216 bytes libres

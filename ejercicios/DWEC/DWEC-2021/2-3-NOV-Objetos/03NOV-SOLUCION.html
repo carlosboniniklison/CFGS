@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Ejercicio de Ejemplo
+DWEC-UD2
+autor: Carlos Boni
+fecha: Agosto 2021
+ENUNCIADO:
+  Ir gradualmente mejorando, paso a paso, hasta llegar
+  donde mejor puedan o quieran. Lo importante es
+  superarse a ustedes mismos, e intentar ser el mejor si
+  se animan...
+  Iremos añadiendo elementos durante la clase.
+  PASO1
+
+-->
+
+<head>
+  <title>Ejercicios Javascript</title>
+  <meta charset="UTF-8">
+  <style>
+    :root {
+      --fondoweb: white;
+      --fondozonaboton: lightblue;
+      --fondozonacajas: lightpink;
+      --fondocajas: red;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0pt;
+      padding: 5pt;
+    }
+
+    body {
+      background-color: var(--fondoweb);
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    p {
+      font-size: calc(8px + 0.5vw + 0.5vh);
+    }
+
+    h1 {
+      font-size: calc(16px + 0.5vw + 0.5vh);
+    }
+
+    #zonacabecera {
+      background-color: transparent;
+      height: 5vh;
+    }
+
+    #zonaboton {
+      background-color: var(--fondozonaboton);
+      width: 25%;
+      height: 10vh;
+      margin: 5vh 1vw 5vh 1vw;
+    }
+
+    #zonacajas {
+      background-color: var(--fondozonacajas);
+      width: 35%;
+      height: 70vh;
+      overflow: hidden;
+      margin: 0vh 1vw 5vh 1vw;
+    }
+
+    .caja {
+      background-color: transparent;
+      border-style: solid;
+      border-width: 1%;
+      border-color: white;
+      margin: 4%;
+      width: 90%;
+      height: 22%;
+      /* visibility:hidden; */
+    }
+
+    .cajaAbierta {
+      background-color: var(--fondocajas);
+      visibility: visible;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="zonacabecera">
+    <h1>SUPERMERCADO</h1>
+  </div>
+  <div id="zonaboton">
+    <p>AQUÍ VA EL BOTÓN</p>
+  </div>
+  <div id="zonacajas">
+    <div class="caja">
+      <p id="msg0" onclick="superMercado[0].llegaCliente()">CAJA0</p>
+    </div>
+    <div class="caja">
+      <p id="msg1">CAJA1</p>
+    </div>
+    <div class="caja">
+      <p id="msg2">CAJA2</p>
+    </div>
+    <div class="caja cajaAbierta">
+      <p id="msg4">CAJA3</p>
+    </div>
+  </div>
+
+  <script>
+    // adaptamos el código inicial usando objetos
+    const topeCola = 4;
+    const numCajas = 3;
+
+    // en este array tengo toda la información de las cajas del Supermercado
+    let superMercado = new Array(numCajas);
+    for (let indice in superMercado) {
+      superMercado[indice] = new Caja('Caja' + indice, indice);
+    }
+
+
+    class Caja {
+      constructor(nombre, numero) {
+        this.nombre = nombre; // caja1, caja2... o nombre del cajero
+        this.numero = numero; // número de caja (0..3)
+        this.cuenta = 0; //cantidad de clientes atendidos
+        this.cola = 0; // cantidad de clientes actualmente en cola
+        this.abierta = true; // está habilitada para recibir más clientes
+        this.libre = true; // el cajero está sin atender en este momento
+        this.tiempo = 0; // tiempo trabajado
+        this.inicio = 0; // hora de comienzo de la última atención
+      }
+
+      llegaCliente() {
+        // a esta función se la debe llamar desde el botón izquierdo de cada caja
+        // cuando llega un cliente a esta caja;
+        // devuelve false en caso de que no pueda ser recibido
+        // 
+        if (this.abierta) {
+          aceptaCliente();
+          return true;
+        } else {
+          // no se aceptan personas en esta caja
+          // puede estar llena o sin personal atendiendo
+          informar();
+          return false;
+        }
+      }
+
+      aceptaCliente() {
+        // cuando se acepta a un cliente en esta caja
+        if (this.libre) {
+          // el personal esta ocioso
+          // comienza a atenderlo directamente sin ponerlo en cola
+          this.libre = false;
+          inicioAtencionCliente();
+        } else {
+          // el personal está ocupado y el cliente se pone en la cola
+          this.cola += 1;
+          informar();
+          if (this.cola == topeCola) {
+            // la cola llega a su límite y la caja se cierra
+            this.abierta = false;
+            informar();
+          }
+        }
+      }
+
+      inicioAtencionCliente() {
+        // cuando el cajero comienza a atender a un cliente
+        // a esta función solamente se llega cuando arriba a la caja
+        // un cliente estando el cajero ocioso, o cuando
+        // se finaliza la atencion de un cliente y todavia
+        // hay clientes en cola.
+        // se registra la hora de inicio de atención para calcular
+        // el tiempo de ocupación del cajero.
+        this.inicio = Date.now();
+        informar();
+      }
+
+      finAtencionCliente() {
+        // a esta función se la debe llamar desde el botón derecho de cada caja
+        if (!this.abierta && this.libre) {
+          // no hay ningún cliente siendo atendido y la caja está cerrada
+          return false;
+        }
+        this.tiempo += Date.now() - this.inicio;
+        this.inicio = 0;
+        this.cuenta += 1;
+        // ahora intenta seguir atendiendo si hay más clientes en cola
+        if (this.cola == 0) {
+          this.libre = true;
+          informar();
+        } else {
+          this.cola -= 1;
+          inicioAtencionCliente();
+        }
+      }
+
+      informar() {
+        // fabricamos un texto indicando el estado de la caja
+
+
+
+        let texto = this.nombre + ' ';
+        if (this.abierta) {
+          texto += 'abierta - '
+        } else {
+          texto += 'cerrada - '
+        }
+
+        if (this.libre) {
+          texto += 'libre - '
+        } else {
+          texto += 'atendiendo - '
+        }
+        if (this.cola == 0) {
+          texto += 'COLA VACÍA'
+        } else {
+          texto += 'en cola: ' + this.cola
+        }
+
+        //así se cambia con jQuery el mensaje del botón de la caja
+        $('msg' + this.numero).html(texto);
+
+
+
+      }
+
+    }
+
+
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>

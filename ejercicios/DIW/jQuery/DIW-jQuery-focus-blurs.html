@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Sistema: proyecto web
+autor: Carlos Boni
+fecha: enero 2021
+-->
+
+<head>
+  <title>Proyecto Integrador - Carlos Boni</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="00-modelo.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+
+<p>Complete el formulario:</p> 
+<input type="text" name="nombre"/>
+<input type="text" name="apellido"/>
+
+<script>
+$(document).ready(function(){
+	 $("input").focus(function(){
+		$(this).css("background-color", "yellow");
+	 });
+	 $("input").blur(function(){
+		$(this).css("background-color", "white");
+	 }); 
+ });
+</script>
+
+
+</body>
+</html>

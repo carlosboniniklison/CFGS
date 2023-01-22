@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Ejercicio de Ejemplo
+DWEC-UD2
+autor: Carlos Boni
+fecha: Agosto 2021
+ENUNCIADO:
+  Leer 2 números usando JS.
+  Imprimir el mayor.
+USAR preferentemente:
+  prompt, parseInt y document.write
+-->
+
+<head>
+  <title>Ejercicios Javascript</title>
+  <meta charset="UTF-8">
+  <style>
+	body {
+		background: rgba(0, 0, 128, 0.1) /* Azul al 10% */
+	}
+  </style>
+</head>
+<body>
+<h1>SI..ELSE..</h1>
+
+
+<script>
+  // seccion de codigo javascript 
+  var num1,num2;
+  num1=prompt('Ingrese el primer número:','');
+  num2=prompt('Ingrese el segundo número:','');
+  num1=parseInt(num1);
+  num2=parseInt(num2);
+  if (num1>num2)
+  {
+    document.write('el mayor es '+num1);
+  }
+  else
+  {
+    document.write('el mayor es '+num2);
+  }
+</script>
+</body>
+</html>

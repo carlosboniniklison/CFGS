@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Validate App</title>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="" class="container">
+            <input type="number" id="n1" class= "n1" min="0" step="3" required>
+            <input type="number" id="n2" class= "n2" min="0" step="3" required>
+            <input type="number" id="n3" class= "n3" min="0" step="3" required>
+        </form>
+        <input class="add" id="add" type="button" onclick="validar()" value="Validate and compare"/>
+        <br>
+        <span id="spanAdd"></span>
+    </body>
+</html>

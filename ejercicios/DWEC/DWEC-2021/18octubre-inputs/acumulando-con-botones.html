@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<!-- Mostramos mensajes personalizados con botones -->
+
+<head>
+    <title>Botones con mensajes</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <form>
+        <input type="button" onClick="msg1()" value="1">
+        <input type="button" onClick="msg2()" value="2">
+        <input type="button" onClick="msg3()" value="3">
+    </form>
+
+    <script>
+        let acumulador = 0;
+        function msg1() {
+            acumulador +=1;
+            alert('Sumando UNO obtenemos '+acumulador);
+        }
+        function msg2() {
+            acumulador +=2;
+            alert('Sumando DOS obtenemos '+acumulador);
+        }
+        function msg3() {
+            acumulador +=3;
+            alert('Sumando TRES obtenemos '+acumulador);
+        }
+    </script>
+
+</body>
+
+</html>

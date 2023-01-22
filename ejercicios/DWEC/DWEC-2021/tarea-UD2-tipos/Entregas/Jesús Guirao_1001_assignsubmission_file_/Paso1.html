@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <!-- Jesús Guirao Melero
+        Desarrollo de Aplicaciones Web -->
+  <head>
+    <title>Numero Mayor que 20</title>
+  </head>
+  <body>
+    <center>
+      <script type="text/javascript">
+        var numero = parseInt(prompt('Ingrese un numero: '));
+        var numero2 = parseInt(prompt('Ingrese un numero: '));
+
+        switch (numero > numero2) {
+          case true:
+            if (numero > 20) {
+              document.write(
+                '<br>El numero ' +
+                  numero +
+                  ' es mayor que 20 y mayor que el numero ' +
+                  numero2
+              );
+            } else if (numero < 20) {
+              document.write(
+                '<br>El numero ' +
+                  numero +
+                  ' no es mayor que 20 pero es mayor que ' +
+                  numero2
+              );
+            }
+            break;
+          case false:
+            if (numero2 > 20) {
+              document.write(
+                '<br>El numero2 ' +
+                  numero2 +
+                  ' es mayor que 20 y mayor que el numero ' +
+                  numero
+              );
+            } else if (numero2 < 20) {
+              document.write(
+                '<br>El numero2 ' +
+                  numero2 +
+                  ' no es mayor que 20 pero es mayor que ' +
+                  numero
+              );
+            }
+
+            break;
+
+          case FIN:
+            document.write('<br>Se acabo el programa');
+          default:
+        }
+      </script>
+    </center>
+  </body>
+</html>

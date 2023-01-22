@@ -1,0 +1,28 @@
+
+Console.SetCursorPosition(origCol+x, origRow+y);
+int x;
+Random rnd = new Random();
+x=rnd.Next();
+x=rnd.Next(num);
+x=rnd.Next(num, num);
+
+ Console.ForegroundColor = colorFrente;
+  Console.BackgroundColor = colorFondo;
+  
+  Dim associatedChar As Char
+' Returns "A".
+associatedChar = Chr(65)
+
+https://elcodigoascii.com.ar/
+
+// Step 1: Get the current window dimensions.
+//
+    origWidth  = Console.WindowWidth;
+    origHeight = Console.WindowHeight;
+	
+width  = origWidth/2;
+    height = origHeight/2;
+    Console.SetWindowSize(width, height);
+	
+Console.Clear();
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5</title>
+    <style>
+        form {
+        position: relative;
+
+        width  : 400px;
+        height : 498px;
+        margin : 0 auto;
+        }
+    </style>
+</head>
+<!--
+lenguaje: HTML 
+autor: Victor Hugo Robles Lucas
+fecha: 20 Octubre 2021
+-->
+
+<!--
+
+Realizar los siguientes pasos como ejercicios separados con html y javascript, y entregarlos en formato .html:
+
+paso 1: Usando tipo TEXT y sin validarlos, convertir las 2 entradas en número usando JavaScript y, 
+añadiendo el nro 20 como tercer elemento, y decir cuál de ellos tres es el número mayor. 
+Observar qué comportamiento tiene cuando se ingresan valores no numéricos o demasiados dígitos.
+
+Paso 2: Añadir al paso 1 una validación por medio de html, usando en lugar de TEXT el tipo adecuado de input.
+
+Paso 3: Añadir el paso 2 una validación adicional con JavaScript para que en caso de haber números iguales
+ lo indique con un mensaje en un prompt.
+
+ Paso 4: Ahora restringir los números de entrada para que solamente se acepten los múltiplos de 3,
+ usando JavaScript.
+
+ Paso 5: Igual al paso anterior pero usando solamente html… ¿es posible?
+
+ NOTA: no usar el botón SUBMIT en los FORM para evitar que se reinicilicen las variables. Se recomienda usar INPUT y,
+  opcionalmente y si lo recuerdan del año pasado, WebStorage (local o session).
+-->
+
+<body>
+    <header>
+		<h1> Validación y Conversión de números ingresados</h1>
+		<p>Paso 1: Usando tipo TEXT y sin validarlos, convertir las 2 entradas en número usando JavaScript y, 
+            añadiendo el nro 20 como tercer elemento, y decir cuál de ellos tres es el número mayor. 
+            Observar qué comportamiento tiene cuando se ingresan valores no numéricos o demasiados dígitos.</p>
+        <p>Paso 2: Añadir al paso 1 una validación por medio de html, usando en lugar de TEXT el tipo adecuado de input.</p>
+        <p>Paso 3: Añadir el paso 2 una validación adicional con JavaScript para que en caso de haber números iguales
+            lo indique con un mensaje en un prompt.</p>
+        <p>Paso 4: Ahora restringir los números de entrada para que solamente se acepten los múltiplos de 3,
+            usando JavaScript.</p>
+	    <p> Paso 5: Igual al paso anterior pero usando solamente html… ¿es posible?</p>
+
+        <p style="color:tomato;"><b> ES POSIBLE PERO DE FORMA LIMITADA HACE FALTA JavaScript PARA VALIDARLO CORRECTAMENTE</b></p>
+	</header>
+
+
+</form>
+
+
+    <form>
+        <fieldset>
+            <legend>Validar números</legend>
+        <!--2.- cambio el tipo de input de un text a un number-->
+        <!--5.-utilizo el min y el step para que acepte los múltiplos de 3-->
+        <p>Ingrese 1º número:<input type="number" id="numero_1" name="numero_1" min = 0 step= 3 required></p>
+        <p>Ingrese 2º número:<input type="number" id="numero_2" name="numero_2" min = 0 step= 3 required></p>
+ 
+        <p><input type="button" value="¿Comprobar cuál es mayor?" onClick="comprobar()"></p>
+        </fieldset>
+
+    </form>
+    
+    <script>
+   
+        function comprobar(){
+            //compruebo que no hayan valores vacios 
+            let num1 = document.getElementById('numero_1').value;
+            let num2 = document.getElementById('numero_2').value;
+
+            if(num1==""  || num2==""){
+                alert('No son valores validos, ingrese números ');
+            }else{
+                        
+                //los convierto a numero con parseInt
+                let numero1 = parseInt(num1);
+                let numero2 = parseInt(num2);
+                //añado tercer elemento
+                const numero3= 20;
+            //3.- mensaje en el promt de que los números son iguales 
+
+                if(numero1==numero2){
+                //if(numero1==numero2 && numero2==numero3){
+                alert('Los números son iguales ');
+                //pregunto cual es el mayor de los 3
+
+                }else if(numero1>numero2 && numero1>numero3){
+                    document.write('Número 1 es mayor: '+numero1);
+                }else if(numero2>numero1 && numero2>numero3){
+                    document.write('Número 2 es mayor: '+numero2);
+                
+                }else{
+                    document.write('Número 3 es mayor: '+numero3);
+                }
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>

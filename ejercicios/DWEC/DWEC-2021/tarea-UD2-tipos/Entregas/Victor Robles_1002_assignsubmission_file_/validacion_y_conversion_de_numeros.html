@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!--
+lenguaje: HTML 
+autor: Victor Hugo Robles Lucas
+fecha: 14 Octubre 2021
+-->
+<head>
+    <title>Validación</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Validación y Conversión de números ingresados</h1>
+    <script>
+        let numero1;
+        let numero2;   
+        let mensaje;
+        let num1;
+        let num2;
+        
+        salir:do{
+       
+                do{ 
+                   num1= prompt('Ingrese primer número o "FIN" para salir');
+                   if(num1.toUpperCase() =='FIN'){
+                       break salir;
+                    }
+                   
+                    numero1=parseInt(num1);
+                    if(isNaN(numero1)){
+                           alert('Dato incorrecto\n'+' Ingrese un número');
+                       }
+                    
+               }while(isNaN(numero1))
+
+               do{ 
+                   num2= prompt('Ingrese segundo número o "FIN" para salir');
+                   if(num2.toUpperCase() =='FIN'){
+                       break salir;
+                    }
+                   
+                    numero2=parseInt(num2);
+                    if(isNaN(numero2)){
+                           alert('Dato incorrecto\n'+' Ingrese un número');
+                       }
+                    
+               }while(isNaN(numero2))
+
+               if (numero1>20 && numero2>20) {
+               
+                   if (numero1>numero2) {
+                       document.write(`Los números ingresados son:<br><br>número1: \"${numero1}\" <br>número2: \"${numero2}\"<br><br>`)
+                       document.write(`Número 1: \"${numero1}\"" es mayor a 20<br><br>`)
+                   }else if (numero1==numero2){
+                        document.write(`Los números ingresados son:<br><br>número1: \"${numero1}\" <br>número2: \"${numero2}\"<br><br>`)
+                        document.write(`Los números son iguales y mayores que 20<br><br>`)
+                   }else{
+                        document.write(`Los números ingresados son:<br><br>número1: \"${numero1}\" <br>número2: \"${numero2}\"<br><br>`)
+                        document.write(`Número 2: \"${numero2}\"" es mayor a 20<br><br>`)
+                   }
+       
+               } else if (numero1>20) {
+                   document.write(`Los números ingresados son:<br><br>número1: \"${numero1}\" <br>número2: \"${numero2}\"<br><br>`)
+       
+                   document.write(`Número 1: \"${numero1}\" es mayor a 20<br><br>`)
+               
+               } else if(numero2>20) {
+                   document.write(`Los números ingresados son:<br><br>número1: \"${numero1}\" <br>número2: \"${numero2}\"<br><br>`)
+       
+                   document.write(`Número 2: \"${numero2}\" es mayor a 20<br><br>`)
+               
+               }
+               else {
+               document.write(`Los números ingresados son:<br><br> número1: \"${numero1}\" <br>número2: \"${numero2}\"<br><br>Ninguno de los números
+               ingresados es mayor a 20 <br><br>`)
+               }
+               document.write(`El tipo de dato del primer valor ingresado es \"${typeof(numero1)}\".
+                                <br> El tipo de dato del segundo valor ingresado es \"${typeof(numero2)}\"<br><br>`);
+                                
+              // mensaje=prompt(`Escriba \"FIN\" para salir o presione cualquier tecla para volver a insertar los números`);
+       
+        }while(num1.toUpperCase() != 'FIN' || num2.toUpperCase!= 'FIN')
+
+             // }while (mensaje.toUpperCase() != 'FIN') 
+                document.write('Adios');
+        
+       </script>
+    
+</body>
+</html>

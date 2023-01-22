@@ -1,0 +1,47 @@
+<!DOCTYPE html">
+<html lang="es">
+
+<head>
+<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+<title>JavaScript basico - ejemplos</title>
+</head>
+
+<!--
+Trabajo: - plantilla 1DAW-Lenguajes de Marcas
+Fecha: Octubre 2020
+Autor: Carlos Boni
+Comentario: corregirlo, usando isFinite() primero, y luego parseInt()...
+
+-->
+<body>
+<h1 id="inicio"> Validando variables numéricas</h1>
+
+<script>
+// aquí van las instrucciones en JavaScript;
+
+var mensaje;
+var x=prompt("Ingrese un número");
+document.write("Usted ingreso: ",x," que es de tipo ",typeof x,"<br>");
+x=parseInt(x);
+document.write("Su entrada se ha convertido en: ",x," que es de tipo ",typeof x);
+if (isNaN(x)) {
+	mensaje="No es un número";
+} else {
+	mensaje = "Enhorabuena! Ha ingresado un número";
+	if (isInteger(x)) {
+		mensaje=mensaje+" entero";
+	} else {
+		mensaje = mensaje + " real (con coma)";
+	}
+}
+document.write("<br>",mensaje);
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

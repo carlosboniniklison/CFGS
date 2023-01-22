@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Ejercicio Menu Sandwich</title>
+
+	<!-- Enlace al css. -->
+	<link rel="stylesheet" href="tarea99.css">
+
+	<!-- Etiqueta para que funcione el responsive en dispositivos móviles. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Enlace a una librería para que aparezca el icono del menú cuando abrimos la web desde un dispositivo móvil. -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 
+
+</head>
+
+
+<body>
+
+
+<!-- Div con el menú. -->
+<div class="menu" id="myMenu">
+  <a href="#inicio" class="active">Inicio</a>
+  <a href="#Tema">Tema</a>
+  <a href="#Contacto">Contacto</a>
+  <a href="#Nosotros">Nosotros</a>
+  <!-- Icono en javascript que ocultaremos mediante el css cuando estemos en la pagina web desde un PC o tablet, aparece sólo cuando entramos a la web desde un dispositivo móvil. -->
+  <a href="javascript:void(0);" class="icono" onclick="myFunction()">
+  	<!-- Esta clase debe llamarse así para que podamos sacar el icono de la librería. -->
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<!-- Script para que funcione el menú desde dispositivos móviles, cuando hacemos clic aparece y cuando volvemos a hacer clic desaparece. -->
+<script type="text/javascript">
+	
+function myFunction() {
+  var x = document.getElementById("myMenu");
+  if (x.className === "menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu";
+  }
+}
+
+</script>
+
+
+</body>
+</html>

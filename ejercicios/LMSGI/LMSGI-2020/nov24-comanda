@@ -1,0 +1,37 @@
+<!DOCTYPE html">
+<html lang="es">
+
+<head>
+<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+<title>Comanda del restaurante</title>
+</head>
+
+<!--
+Trabajo: - 1DAW-Lenguajes de Marcas
+Fecha: 24 noviembre 2020
+Autor: Carlos Boni
+Comentario: comenzamos a dar formato css a la pagina
+de pedido de comanda en nuestro caso practico de restaurante...
+
+-->
+<body>
+<div>
+<p>1.CABECERA</p>
+</div>
+<div>
+<p>2.CONTENIDO</p>
+</div>
+<div>
+<p>3.MENU</p>
+</div>
+<div>
+<p>2.PIE DE PAGINA</p>
+</div>
+
+
+
+<h1 id="inicio"> CABECERA </h1>
+
+</body>
+
+</html>

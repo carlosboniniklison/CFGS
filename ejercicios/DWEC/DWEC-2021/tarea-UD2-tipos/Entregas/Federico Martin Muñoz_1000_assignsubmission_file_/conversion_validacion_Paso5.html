@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<!-- Federico Martin Muñoz
+
+        Desarrollo de Aplicaciones Web -->
+
+<head>
+    <title>NÚMERO MAYOR QUE 20</title>
+</head>
+
+<body style="background-color: cadetblue;">
+  
+        <form id="formulario">
+            <label>Introduce dos números:
+                <br>
+                <br>
+                <input name="dato" type="number" step="3" min="3" />
+                <br>
+                <br>
+                <input name="dato2" type="number" step="3" min="3" />
+            </label>
+            <br /><br />
+            <button id="boton" type="submit">Enviar</button>
+        </form>
+  
+    <script type="text/javascript">
+
+        var formulario = document.getElementById('formulario');
+        formulario.addEventListener('submit', añadirElemento);
+
+        function añadirElemento(event) {
+            var numerosIntroducidos = [];
+
+            numerosIntroducidos.push(event.target.elements.dato.value);
+            numerosIntroducidos.push(event.target.elements.dato2.value);
+         
+
+
+            var hayRepetidos = numerosIntroducidos.length === new Set(numerosIntroducidos).size
+
+            if (hayRepetidos) {
+                pintarNumeros(numerosIntroducidos)
+            } else {
+                alert("Tienes elementos repetidos")
+
+            }
+        }
+
+        function numeroMayor(arrNumeros) {
+            return Math.max(...arrNumeros);
+        }
+
+        function pintarNumeros(arrNumeros) {
+            var elNumeroMayor = numeroMayor(arrNumeros);
+            document.write("<ul>");
+            var masGrande = numeroMayor(arrNumeros);
+            arrNumeros.forEach((element) => {
+                if (element === masGrande) {
+                    document.write(`<li>${element} es el mas grande</li>`)
+                } else {
+                    document.write(`<li>${element}</li>`)
+                }
+            });
+            document.write("</ul>");
+        }
+    </script>
+</body>
+
+</html>

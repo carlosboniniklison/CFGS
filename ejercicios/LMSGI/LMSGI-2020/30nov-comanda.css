@@ -1,0 +1,51 @@
+* {
+	box-sizing:border-box;
+	padding:0px 5px 0px 5px;
+	
+}
+
+body {
+	margin:0px;
+	background-color:white;
+}
+
+#bloquecentral {
+		 display:flex;
+	}
+	
+p {
+	font-size:18px;
+}
+
+
+div {
+	/* padding:10px; */
+}
+
+#encabezado {
+	padding-top:5px;
+}
+
+#contenido {
+	background-color:#f2f2f2;
+	width:75%;
+}
+#lista {
+	padding-left:20px;
+}
+
+.pCentrado {
+	text-align:center;
+}
+
+@media screen and (max-width:600px) {
+	
+	#bloquecentral {
+		 display:unset;
+	}
+	
+	#contenido {
+		width:100%;
+	}
+}
+

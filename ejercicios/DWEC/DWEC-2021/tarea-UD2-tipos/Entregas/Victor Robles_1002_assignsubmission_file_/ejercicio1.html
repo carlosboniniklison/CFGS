@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+    <style>
+        form {
+        position: relative;
+
+        width  : 400px;
+        height : 498px;
+        margin : 0 auto;
+        }
+    </style>
+</head>
+<!--
+lenguaje: HTML 
+autor: Victor Hugo Robles Lucas
+fecha: 20 Octubre 2021
+-->
+
+
+<body>
+    <header>
+		<h1> Validación y Conversión de números ingresados</h1>
+		<p>Paso 1: Usando tipo TEXT y sin validarlos, convertir las 2 entradas en número usando JavaScript y, 
+            añadiendo el nro 20 como tercer elemento, y decir cuál de ellos tres es el número mayor. 
+            Observar qué comportamiento tiene cuando se ingresan valores no numéricos o demasiados dígitos.</p>
+	
+	</header>
+    <form>
+        <fieldset>
+            <legend>Validar números</legend>
+        <p>Ingrese 1º número:<input type="text" id="numero_1"></p>
+        <p>Ingrese 2º número:<input type="text" id="numero_2" ></p>
+        <p><input type="button" value="¿Comprobar cuál es mayor?" onClick="comprobar()"></p>
+       </fieldset>
+    </form>
+    
+    <script>
+   
+        function comprobar(){
+            //los convierto a numero con parseInt
+            let numero1 = parseInt(document.getElementById('numero_1').value);
+            let numero2 = parseInt(document.getElementById('numero_2').value);
+            //añado tercer elemento
+            const numero3= 20;
+            
+            //pregunto cual es el mayor de los 3
+            if(numero1>numero2 && numero1>numero3){
+                document.write('Número 1 es mayor: '+numero1);
+            }else if(numero2>numero1 && numero2>numero3){
+                document.write('Número 2 es mayor: '+numero2);
+            
+            }else{
+                document.write('Número 3 es mayor: '+numero3);
+            
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

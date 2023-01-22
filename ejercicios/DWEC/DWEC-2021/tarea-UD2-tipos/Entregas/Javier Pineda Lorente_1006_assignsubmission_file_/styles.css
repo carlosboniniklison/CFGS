@@ -1,0 +1,32 @@
+
+.formulario input:not([type=submit]),
+.formulario select,
+.formulario textarea{
+font-style: italic;
+padding:10px;
+display:block;
+width:10%;
+background-color:#fff;border:0 solid #e1e1e1;
+border-radius:10px;
+margin-bottom:20px;
+}.formulario textarea{
+    height:150px;
+}.formulario .forma-contacto{
+max-width:30opx;
+display:flex;
+justify-content:space-between;
+align-items:center
+}
+.formulario input[type=radio]{
+margin:0;
+width:auto;
+}
+.formulario{
+    background-color: aquamarine;
+    padding: 10px 30px 10px 10px;
+}
+.boton{
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    
+}

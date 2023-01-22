@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<!-- Jesús Guirao Melero
+        Desarrollo de Aplicaciones Web -->
+
+<head>
+  <title>Numero Mayor que 20</title>
+</head>
+
+<body>
+  <center>
+    <form id="formulario">
+      <label>Introduce dos numero:
+        <br>
+        <br>
+        <input name="dato" type="number" />
+        <br>
+        <br>
+        <input name="dato2" type="number" />
+      </label>
+      <br /><br />
+      <button id="boton" type="submit">Enviar</button>
+    </form>
+  </center>
+  <script type="text/javascript">
+
+    var formulario = document.getElementById('formulario');
+    formulario.addEventListener('submit', añadirElemento);
+
+    function añadirElemento(event) {
+      var numerosIntroducidos = [];
+
+      numerosIntroducidos.push(event.target.elements.dato.value);
+      numerosIntroducidos.push(event.target.elements.dato2.value);
+      // numerosIntroducidos.push(20) No es multiplo de 3
+
+      var todosSonMultiplosDeTres = numerosIntroducidos.filter((e) => (e % 3 === 0)).length === numerosIntroducidos.length;
+
+      var hayRepetidos = numerosIntroducidos.length === new Set(numerosIntroducidos).size
+
+      if (todosSonMultiplosDeTres && hayRepetidos) {
+        pintarNumeros(numerosIntroducidos)
+      } else {
+        if (!hayRepetidos) {
+          alert("Tienes elemntos repetidos")
+        } else {
+          alert("Tienes numeros que no son multiplos de 3")
+        }
+      }
+    }
+
+    function numeroMayor(arrNumeros) {
+      return Math.max(...arrNumeros);
+    }
+
+    function pintarNumeros(arrNumeros) {
+      var elNumeroMayor = numeroMayor(arrNumeros);
+      document.write("<ul>");
+      var masGrande = numeroMayor(arrNumeros);
+      arrNumeros.forEach((element) => {
+        if (element === masGrande) {
+          document.write(`<li>${element}, es el mas grande</li>`)
+        } else {
+          document.write(`<li>${element}</li>`)
+        }
+      });
+      document.write("</ul>");
+    }
+  </script>
+</body>
+
+</html>

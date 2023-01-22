@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Sistema: proyecto web
+autor: Carlos Boni
+fecha: enero 2021
+-->
+
+<head>
+  <title>Proyecto Integrador - Carlos Boni</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="00-modelo.css"/>
+    <style>
+	/* aquí estilos aplicados solo a esta pagina */
+	body {
+		background: rgba(0, 0, 128, 0.1) /* Azul al 10% */
+	}
+	input {
+		background-color:yellow;
+	}
+	
+  </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+
+<body style="box-sizing:border-box">
+	<header>
+		<h1>EJEMPLO localStorage HTML5</h1> <!-- 1 y solo 1 por pagina -->
+	</header>
+	
+	<main> <!-- aqui podemos tambien usar section y article -->
+	
+		<header style="display:flex">
+			<div id="izq" style="width:25%">
+			<!-- bloque superior izquierdo -->
+				<form name="miFormulario" onSubmit="return guardaUsr()">
+					<label for="usuario">Usuario:</label><br>
+					<input type="text" id="usuario" name="usuario" maxlength="10" required><br>
+					<input type="submit" value="Submit">
+				</form>
+				<p id="aqui">(aqui veremos el usuario activo)</p>
+			</div>
+			<div id="cent" style="width:50%">
+			<!-- bloque superior central -->
+			
+			</div>
+			<div id="der" style="width:25%">
+			<!-- bloque superior derecho -->
+			
+			</div>
+			
+		
+		</header>
+	
+	
+
+	</main>
+	
+
+	<script>
+	// seccion de codigo javascript 
+		 document.getElementById("aqui").innerHTML = sessionStorage.getItem("nomUsr");
+				  
+		 function guardaUsr() {
+		  var x=document.forms["miFormulario"]["usuario"].value;
+		  sessionStorage.setItem("nomUsr", x);
+		  document.getElementById("aqui").innerHTML = sessionStorage.getItem("nomUsr");
+		  
+		  return false;  
+		 }
+		 
+		$(document).ready(function(){
+			 $("input").focus(function(){
+				$(this).css("background-color", "rgba(255,0,0,0.2)");
+			 });
+			 $("input").blur(function(){
+				$(this).css("background-color", "transparent");
+			 }); 
+		 });		 
+		 
+		 
+	</script>
+</body>
+</html>

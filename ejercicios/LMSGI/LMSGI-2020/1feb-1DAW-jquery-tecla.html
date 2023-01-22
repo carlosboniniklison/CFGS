@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Sistema: proyecto web
+autor: Carlos Boni
+fecha: enero 2021
+-->
+
+<head>
+  <title>Proyecto Integrador - Carlos Boni</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="00-modelo.css"/>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+Escribe aquí: <input type="text">
+<p>Verás el texto, pero debajo elcódigo de tecla usada cad vez.</p>
+<div> </div>
+
+
+	<script>
+	// seccion de codigo javascript 
+		$(document).ready(function(){
+			$("input").keydown(function(event){
+				$("div").text("Tecla: "+event.which);
+			});
+		});		
+
+	</script>
+</body>
+</html>

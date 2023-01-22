@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="filmoteca">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="pelicula"/>
+                <xs:element ref="autor"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="pelicula">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element ref="director" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="titulo"/>
+            </xs:sequence>
+            <xs:attribute name="genero" use="required" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="director" type="xs:string"/>
+    <xs:element name="titulo" type="xs:string"/>
+    <xs:element name="autor" type="xs:NCName"/>
+    <xs:element name="genero">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Terror"/>
+          <xs:enumeration value="Comedia"/>
+          <xs:enumeration value="Drama"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:element>
+</xs:schema>

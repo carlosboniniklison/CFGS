@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <!-- Jesús Guirao Melero
+        Desarrollo de Aplicaciones Web -->
+
+  <head>
+    <title>Numero Mayor que 20</title>
+  </head>
+
+  <body>
+    <center>
+      <form id="formulario">
+        <label
+          >Introduce numeros, para finalizar introduce FIN:
+          <input name="datos" type="text"
+        /></label>
+        <br /><br />
+        <button id="boton" type="submit">Enviar</button>
+      </form>
+    </center>
+    <script type="text/javascript">
+      var numerosIntroducidos = [];
+
+      var formulario = document.getElementById('formulario');
+      formulario.addEventListener('submit', añadirElemento);
+
+      function añadirElemento(event) {
+        console.log(event);
+        event.preventDefault();
+        var numeroIntroducido = event.target.elements.datos.value;
+        if (numeroIntroducido === 'FIN') {
+          document.getElementById('boton').disabled = true;
+          console.log(numerosIntroducidos);
+          pintarNumeros(numerosIntroducidos);
+        } else {
+          numeroIntroducido = parseInt(event.target.elements.datos.value);
+          if (isNaN(numeroIntroducido)) {
+            alert('Dato erroneo');
+          } else {
+            numerosIntroducidos.push(numeroIntroducido);
+          }
+        }
+        event.target.elements.datos.value = '';
+      }
+
+      function numeroMayorQue20(numero) {
+        if (numero > 20) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      function numeroMayor(numero) {
+        return Math.max(...numero);
+      }
+
+      function pintarNumeros(arrNumeros) {
+        var elNumeroMayor = numeroMayor(arrNumeros);
+        arrNumeros.forEach((element) => {
+          if (numeroMayorQue20(element)) {
+            if (elNumeroMayor === element) {
+              document.writeln(
+                `<li>${element} es mayor que 20 y es el mayor de todos</li>`
+              );
+            } else {
+              document.writeln(`<li>${element} es mayor que 20</li>`);
+            }
+          } else {
+            if (elNumeroMayor === element) {
+              document.writeln(
+                `<li>${element} es menor que 20 y es el mayor de todos</li>`
+              );
+            } else {
+              document.writeln(`<li>${element} es menor que 20</li>`);
+            }
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

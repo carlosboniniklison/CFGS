@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Sistema: proyecto web
+autor: Carlos Boni
+fecha: enero 2021
+-->
+
+<head>
+  <title>Proyecto Integrador - Carlos Boni</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="00-modelo.css"/>
+    <style>
+	/* aquí estilos aplicados solo a esta pagina */
+	body {
+		background: rgba(0, 0, 128, 0.1) /* Azul al 10% */
+	}
+
+	#midiv {
+		position: absolute;
+		left:50px;
+		border: 3px solid green;
+		width: 300ps;
+		bottom; 60px;
+	}
+	
+	.pos-rel {
+		position:relative;
+		/* OKOK. el contenido mantiene su espacio respecto de donde le tocaría
+		de forma natural, y lo amplía */
+		margin-top:30px;
+		margin-left:30px;
+		color:red;
+	}
+	
+	.pos-abs {
+		position:absolute;
+		/* OKOK. el contenido se desplaza desde donde le tocaría
+		de forma natural, permitiendo que su antiguo sitio sea ocupado */
+		margin-top:30px;
+		margin-left:30px;
+		color:red;
+	}
+
+	.pos-fix {
+		position:fixed;
+		/* OK. el contenido se desplaza desde donde le tocaría
+		de forma natural, quedado anclado al marco u origen del viewport,
+		y permitiendo que su antiguo sitio sea ocupado */
+		margin-top:30px;
+		margin-left:30px;
+		color:red;
+	}
+	
+	.pos-stk {
+		position:sticky;
+		top:50px;
+		margin-left:30px;
+		margin-top:30px;
+		/* OK.OK. el contenido mantiene su espacio respecto de donde le tocaría
+		de forma natural, y lo amplía. Luego con el scroll,
+		cuando llega a una distancia TOP del border
+		superior del viewport, o BOTTOM del barde inferior, se queda fijo */
+		color:red;
+	}
+	
+	
+  </style>
+  <script>
+	// seccion de codigo javascript 
+  </script>
+</head>
+
+
+<body>
+	<header>
+		<h1>POSICIONAMIENTO CSS</h1> <!-- 1 y solo 1 por pagina -->
+	</header>
+	
+	<main> <!-- aqui podemos tambien usar section y article -->
+	<div id="midiv">
+		<ol>
+			<li class="pos-abs">Position Absolute</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>			
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li class="pos-stk">Position Sticky</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>			
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li class="pos-rel">Position Relative</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li class="pos-fix">Position Fixed</li>
+			<li>Linea de Texto</li>			
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>			
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>
+			<li>Linea de Texto</li>			
+		</ol>
+		</div>
+	</main>
+	
+	<footer>
+	
+	</footer>
+	
+
+	<script>
+	// seccion de codigo javascript 
+
+	</script>
+</body>
+</html>

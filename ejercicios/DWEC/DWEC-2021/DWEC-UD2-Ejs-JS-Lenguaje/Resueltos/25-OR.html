@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Ejercicio de Ejemplo
+DWEC-UD2
+autor: Carlos Boni
+fecha: Agosto 2021
+ENUNCIADO:
+  Leer una fecha como 3 valores independientes (dia, mes, anio).
+  Indicar si pertenece al primer trimestre.
+USAR preferentemente:
+  operador lógico OR
+-->
+
+<head>
+  <title>Ejercicios Javascript</title>
+  <meta charset="UTF-8">
+  <style>
+	body {
+		background: rgba(0, 0, 128, 0.1) /* Azul al 10% */
+	}
+  </style>
+</head>
+<body>
+<h1>OR</h1>
+
+
+<script>
+  // seccion de codigo javascript 
+  var dia,mes,año;
+  dia=prompt('Ingrese día:','');
+  mes=prompt('Ingrese mes:','');
+  año=prompt('Ingrese año:','');
+  dia=parseInt(dia);
+  mes=parseInt(mes);
+  año=parseInt(año);
+  if (mes==1 || mes==2 || mes==3)
+  {
+    document.write('corresponde al primer trimestre del año.');
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html">
+<html lang="es">
+
+<head>
+<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+<title>JavaScript basico - ejemplos</title>
+</head>
+
+<!--
+Trabajo: - plantilla 1DAW-Lenguajes de Marcas
+Fecha: Octubre 2020
+Autor: Carlos Boni
+Comentario: a partir de este código puedo hacer todos los ejercicios.
+La iremos mejorando a partir de nuevos conocimientos...
+
+-->
+<body>
+<h1 id="inicio"> Manejando ventanas </h1>
+
+<script>
+var ventananueva=window.open("","","width=550,height=420,menubar=yes");
+document.write("Soy la ventana padre");
+ventananueva.document.write("Soy la ventana nueva");
+ventananueva.close();
+
+
+</script>
+
+</body>
+
+</html>

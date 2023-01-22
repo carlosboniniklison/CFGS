@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+web o pagina:
+alumno:
+fecha:
+-->
+
+<head>
+  <title>Practica de Validación de Formularios</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="12-ene-formulario.css"/>
+    <style>
+	/* aquí estilos aplicados solo a esta pagina */
+	body {
+		background: rgba(0, 0, 128, 0.1) /* Azul al 10% */
+	}
+  </style>
+  <script>
+	// seccion de codigo javascript 
+  </script>
+</head>
+
+
+<body>
+
+<h1>VALIDAR FORMULARIOS</h1>
+
+<form action="12-ene-formulario.js">
+  <label for="nombre">Nombre:</label><br>
+  <input type="text" id="nombre" name="nom" maxlength="30" value="Carlos" readonly><br>
+  <label for="apellido">Apellido:</label><br>
+  <input type="text" id="apellido" name="ape" maxlength="30" required><br><br>
+  <label for="edad">Edad:</label><br>
+  <input type="number" id="edad" name="edad" min="18" max="120" required><br>
+  <label for="fnac">F.Nac.:</label><br>
+  <input type="date" id="fnac" name="fnac" min="1900-01-01" max="2004-12-31" required><br>
+  <label for="color">Color:</label><br>
+  <input type="color" id="color" name="col" required><br>
+  <input type="submit" value="Enviar">
+</form> 
+
+<script>
+  // seccion de codigo javascript 
+
+</script>
+</body>
+</html>

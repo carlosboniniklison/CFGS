@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina: practicas en clases de LLMM
+autor: Carlos Boni
+fecha: Febrero 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>Ajuste de texto alrededor de imagenes</title>
+	
+	
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+	*{
+		box-sizing:border-box;
+	}
+	
+	section {
+		overflow:auto;
+		/*height:150px;*/
+	}
+	
+	img.izquierda {
+		float:left;
+		clear:all;
+		margin:5px;
+		width:40%;
+		height:auto;
+		object-fit:cover;
+	}
+	
+	</style>
+	
+</head>
+
+
+<body>
+
+	<!-- cabecera de pagina -->
+	<header>
+		<h1>AJUSTE DE TEXTO ALREDEDOR DE IMAGENES</h1>
+		<br/>
+	</header>
+	
+	<!-- bloque de contenido de la pagina -->
+	<section>
+		<img class="izquierda" src="media/condor2.jpg"/>
+		<p>Su plumaje es de color café mientras alcanzan la madures, este empezara a mudar a negro. Los ojos de los machos son de color café y los ojos de las hembras son de color rojizo.</p>
+		<p>Es una de las aves más longevas del mundo, viviente hasta 75 años. Su plumaje es denso, lo que lo mantiene abrigado en climas gélidos.</p>
+	</section>
+
+	<!-- pie de pagina -->
+	<footer>
+		<div>&copy; 2020 <a href="https://carlosboni.com" target="_blank">Prof. Carlos Boni</a></div>
+	</footer>
+
+	<script>
+		// seccion de codigo javascript 
+
+	</script>
+</body>
+</html>

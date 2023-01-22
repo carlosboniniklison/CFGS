@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Ejercicio de Ejemplo
+DWEC-UD2
+autor: Carlos Boni
+fecha: Agosto 2021
+ENUNCIADO:
+  Ir gradualmente mejorando, paso a paso, hasta llegar
+  donde mejor puedan o quieran. Lo importante es
+  superarse a ustedes mismos, e intentar ser el mejor si
+  se animan...
+  Iremos añadiendo elementos durante la clase.
+  PASO1
+
+-->
+
+<head>
+  <title>Ejercicios Javascript</title>
+  <meta charset="UTF-8">
+  <style>
+    :root {
+      --fondoweb: white;
+      --fondozonaboton: lightblue;
+      --fondozonacajas: lightpink;
+      --fondocajas: red;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0pt;
+      padding: 5pt;
+    }
+
+    body {
+      background-color: var(--fondoweb);
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    p {
+      font-size: calc(8px + 0.5vw + 0.5vh);
+    }
+
+    h1 {
+      font-size: calc(16px + 0.5vw + 0.5vh);
+    }
+
+    #zonacabecera {
+      background-color: transparent;
+      height: 5vh;
+    }
+
+    #zonaboton {
+      background-color: var(--fondozonaboton);
+      width: 25%;
+      height: 10vh;
+      margin: 5vh 1vw 5vh 1vw;
+    }
+
+    #zonacajas {
+      background-color: var(--fondozonacajas);
+      width: 35%;
+      height: 70vh;
+      overflow: hidden;
+      margin: 0vh 1vw 5vh 1vw;
+    }
+
+    .caja {
+      background-color: transparent;
+      border-style: solid;
+      border-width: 1%;
+      border-color: white;
+      margin: 4%;
+      width: 90%;
+      height: 22%;
+      /* visibility:hidden; */
+    }
+
+    .cajaAbierta {
+      background-color: var(--fondocajas);
+      visibility: visible;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="zonacabecera">
+    <h1>SUPERMERCADO</h1>
+  </div>
+  <div id="zonaboton">
+    <p>AQUÍ VA EL BOTÓN</p>
+  </div>
+  <div id="zonacajas">
+    <div class="caja">
+      <p>CAJA1</p>
+    </div>
+    <div class="caja">
+      <p>CAJA2</p>
+    </div>
+    <div class="caja">
+      <p>CAJA3</p>
+    </div>
+    <div class="caja cajaAbierta">
+      <p>CAJA4</p>
+    </div>
+  </div>
+
+  <script>
+    // adaptamos el código inicial usando objetos
+   
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>

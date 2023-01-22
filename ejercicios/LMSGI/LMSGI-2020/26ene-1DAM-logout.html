@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Tema: Web Storage - localstorage y sessionstorage 
+alumno: Carlos Boni
+fecha: 18 enero
+-->
+
+<head>
+  <title>HTML5 - WebStorage - sessionStorage</title>
+  <meta charset="UTF-8"/>  
+  <style>
+	* {
+		box-sizing: border-box;
+		margin:0px;
+	}
+	
+	header {
+		display:flex;
+		background-color:rgba(0, 0, 0,0.5);
+	}
+  
+	#di {
+		width:25%;
+		background-color:rgba(255, 153, 255,0.5);
+		/* black rgb(0,0,0)   rgba (0,0,0,1) #000000 */
+		text-align:left;
+	}
+
+	#dc {
+		width:50%;
+		background-color:rgba(255, 255, 153,0.5);
+		text-align:center;
+	}
+		
+	#dd {
+		width:25%;
+		background-color:rgba(153, 255, 255,0.5);
+		padding:10px;
+		margin:10px;
+		border: 5px solid black;
+		text-align:right;
+	}
+	
+
+  </style>
+  
+</head>
+
+
+<body>
+	<header>
+		<div id="di">
+			<!-- contenido del div izquierdo -->
+			<p>TEXTO</p>
+		</div>
+		<div id="dc">
+			<!-- contenido del div central -->
+			<p>TEXTO</p>
+		</div>
+		<div id="dd">
+			<!-- contenido del div derecho -->
+			<form name="miFormulario" onSubmit="return salir()">
+			  <input type="submit" value="Desconectar">
+			</form>
+		</div>
+
+	</header>
+			<!-- creamos un elemento vacío para luego poner allí el resultado
+			de nuestro script -->
+			<br/>
+			<div id="mensaje"></div>		
+<script>
+  // seccion de codigo javascript 
+		// Valida que el browser lo permita
+	document.getElementById("mensaje").innerHTML = sessionStorage.getItem("usuario");
+	
+	function ingresar(){
+		if (typeof(Storage) !== "undefined") {
+		  // Almacena un valor usando el método setItem del objeto localStorage
+		  var x=document.forms["miFormulario"]["usuario"].value;
+		  sessionStorage.setItem("usuario", x);
+		  // Recupera el valor usando el método getItem del objeto localStorage
+		  //document.getElementById("mensaje").innerHTML = sessionStorage.getItem("apellido");
+		} else {
+		  alert("Este navegador no soporta web storage...");
+		}
+		window.location.replace("26ene-1DAM-login.html");
+		return false;
+	}
+</script>
+</body>
+</html>
+
+
+

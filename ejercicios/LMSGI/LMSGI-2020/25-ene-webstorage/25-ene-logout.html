@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+Tema: Web Storage - localstorage y sessionstorage 
+alumno: Carlos Boni
+fecha: 18 enero
+-->
+
+<head>
+  <title>HTML5 - WebStorage - sessionStorage</title>
+  <meta charset="UTF-8"/> 
+	<style>  
+		* {
+			box-sizing: border-box;
+			margin:0px;
+		}
+		
+		header{
+			display:flex;
+			background-color:rgba(0,0,0,0.2);
+		}
+		
+		#a{
+			width:25%;
+			background-color:rgba(0,0,255,0.9);
+		}
+		
+		#b{
+			border: 20px solid black;
+			/*border-radius: 25px;*/
+			width:50%;
+			/*margin-left:10px;*/
+			/margin-right:10px;
+			background-color:rgba(0,255,0,0.9);
+		}
+		
+		#c{
+			width:25%;
+			padding:10px;
+			background-color:rgba(255,0,0,0.9);
+		}
+
+	</style>  
+</head>
+
+
+<body>
+
+
+	<header>
+				<div id="a"></div>					
+				<div id="b"></div>
+				<div id="c">
+					<h2>LOGOUT</h2>
+					<form name="miFormulario" onSubmit="return salir()">
+					  <input type="submit" value="Desconectar">
+					</form>
+					<!-- creamos un elemento vacío para luego poner allí el resultado
+					de nuestro script -->
+					<br/>
+					<div id="mensaje"></div>	
+				</div>
+	</header>
+	<nav>
+	</nav>
+	<main>
+				<div id="art1">
+					<article>
+					</article>
+				</div>					
+				<div id="art2">
+					<article>
+					</article>
+				</div>
+				<div id="art3">
+					<article>
+					</article>
+				</div>
+	</main>
+			
+			
+<script>
+  // seccion de codigo javascript 
+		// Valida que el browser lo permita
+	document.getElementById("mensaje").innerHTML = sessionStorage.getItem("apellido");
+	
+	function salir(){
+		if (typeof(Storage) !== "undefined") {
+		  // Almacena un valor usando el método setItem del objeto localStorage
+		  sessionStorage.removeItem("apellido");
+		  
+		} else {
+		  document.getElementById("mensaje").innerHTML = "Este navegador no soporta web storage...";
+		}
+		window.location.replace("25-ene-login.html");
+		return false;
+	}
+</script>
+</body>
+</html>
+
+
+

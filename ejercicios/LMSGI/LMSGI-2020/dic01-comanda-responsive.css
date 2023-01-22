@@ -1,0 +1,63 @@
+
+/* 
+web o pagina: Comanda del Chiringuito
+alumno: Carlos Boni
+fecha: 1 diciembre
+*/
+
+* {
+	box-sizing:border-box;
+	/*padding:10px;*/
+	
+}
+
+body {
+	margin:0px;	
+}
+p {
+	margin:0px;
+	
+}
+
+div {
+	background-color:#f2f2f2;
+	/* padding:10px; */
+}
+
+#contenido {
+	background-color:#f2f2f2;
+	width:75%;	
+}
+
+#menuDerecha {
+	width:25%;
+	margin:0px;
+	background-color:gainsboro;
+}
+
+.miFondoGris {
+	background-color:lightgray;
+}
+
+#cajaVariable {
+		display:flex;
+}
+
+@media screen and (max-width:600px){
+		/* solo se aplica cuando el viewport es estrecho, como máximo de 600 puntos */
+		/* hay que definir aquí selectores y estilos */
+		/* al menos para las columnas ancha y estrecha de la zona de contenidos de la pagina */
+		#cajaVariable {
+			display:unset;
+		}
+		
+		#contenido, #menuDerecha{
+			width:100%;	
+		}
+		
+		/*#menuDerecha {
+			width:100%;
+		} */
+
+}
+

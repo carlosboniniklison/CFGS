@@ -1,0 +1,32 @@
+ El volumen de la unidad C es 1DAM
+ El n£mero de serie del volumen es: C610-C70A
+
+ Directorio de C:\CarlosBoni\LLMM
+
+04/11/2020  10:04    <DIR>          .
+04/11/2020  10:04    <DIR>          ..
+04/11/2020  09:34    <DIR>          ahora
+20/10/2020  09:07               483 berenjena.html
+19/10/2020  19:15               334 bloques-coloridos.html
+27/10/2020  10:36               557 caracteres-spanish.html
+03/11/2020  11:04               148 codigo.js
+28/10/2020  11:56               203 CodigoHechoEnVSC.html
+26/10/2020  19:53               419 conVisualStudio.sln
+20/10/2020  16:04               733 cuestionario.html
+20/10/2020  10:21               798 div.html
+20/10/2020  08:38               712 ejerc02.html
+03/11/2020  09:08               307 holamundo.js
+03/11/2020  09:04                56 holamundo.psc
+04/11/2020  10:04                 0 listado.txt
+03/11/2020  10:02               355 nov03-ej1-ordenar2nros.html
+03/11/2020  10:19               417 nov03-ej1-ordenar2nrosLeidos.html
+03/11/2020  10:59               548 nov03-ej3-mostrarnumero.html
+03/11/2020  17:21               300 nov03-ej4-jsexterno.html
+03/11/2020  17:21               241 nov03-holamundo.html
+03/11/2020  17:06               632 nov03-js-inicio.html
+26/10/2020  20:40                53 PATTERN-DNI-posible
+27/10/2020  10:31               507 plantilla.html
+03/11/2020  16:51               462 plantilla.rar
+13/10/2020  10:50            11.886 salto.html
+              22 archivos         20.151 bytes
+               3 dirs  195.604.832.256 bytes libres

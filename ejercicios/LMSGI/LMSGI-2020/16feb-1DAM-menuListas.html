@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina: menu horizontal genérico
+autor: Carlos Boni
+fecha: Febrero 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>Menú Responsive con Listas</title>
+	
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+	
+	<!-- una hoja de estilos externa-->
+	
+	<!-- una hoja de estilos personalizada-->
+	<link href="00-modelo.css" rel="stylesheet"/>
+	
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+		body {
+			background-color: rgba(0, 0, 128, 0.1); /* Azul al 10% */
+			margin:0px;
+		}
+		
+		* {
+			font-family: 'Nunito', sans-serif;
+		}
+		
+		nav {
+			background-color:white;
+			display:flex;
+		}
+		
+		.elh6 { /* elemento de lista horizontal capac 6 elementos*/
+			display:inline-block;
+			width:16.6%;
+			padding-left: 5px;
+			padding-right:5px;		}
+
+		.elhx { /* elemento de lista horizontal capac variable */
+			display:inline-block;
+			padding-left: 5px;
+			padding-right:5px;
+		}
+
+		.lv { /* lista vertical */
+			display:block;
+		}
+		
+		nav li {
+			display:block;
+		}
+		
+		@media screen and (max-width:600px) {
+			nav {
+				display:block;
+			}
+		}
+		
+		
+	</style>
+	
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+	<script src="00-modelo.js"></script>
+	
+	<!-- scripts personalizados Javascript o JQuery -->
+	<script>
+		// aqui el codigo ...
+	</script>
+</head>
+
+
+<body>
+
+	<!-- cabecera de pagina -->
+	<header>
+		<h1>MENÚ RESPONSIVE CON LISTAS</h1>
+		<br/>
+		
+	</header>
+	
+	<nav>
+		<ul id="ul1">
+			<li> <a href="#">Opc 1.1.</a></li>
+		</ul>
+		<ul id="ul2">
+			<li> <a href="#">Opc 2.1.</a></li>
+			<li> <a href="#">Opc 2.2.</a></li>
+		</ul>
+		<ul id="ul3">
+			<li> <a href="#">Opc 3.1.</a></li>
+			<li> <a href="#">Opc 3.2.</a></li>
+			<li> <a href="#">Opc 3.3.</a></li>
+		</ul>
+		<ul id="ul4">
+			<li> <a href="#">Opc 4.1.</a></li>
+				<ul id="ul42">
+					<li> <a href="#">Opc 4.2.1.</a></li>
+					<li> <a href="#">Opc 4.2.2.</a></li>
+					<li> <a href="#">Opc 4.2.3.</a></li>
+				</ul>
+			</li>
+		</ul>
+		<ul id="ul5">
+			<li> <a href="#">Opc 5.1.</a></li>
+			<li> <a href="#">Opc 5.2.</a></li>
+		</ul>
+		<ul id="ul6">
+			<li> <a href="#">Opc 6.1.</a></li>
+			<li> <a href="#">Opc 6.2.</a></li>
+		</ul>
+	</nav>
+	
+	<!-- bloque de contenido de la pagina -->
+	<main>
+
+	</main>
+
+
+	<!-- pie de pagina -->
+	<footer>
+		<br/><br/><br/>
+		<div>&copy; 2020 <a href="https://carlosboni.com" target="_blank">Prof. Carlos Boni</a></div>
+	</footer>
+
+	<script>
+		// seccion de codigo javascript 
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html">
+<html lang="es">
+
+<head>
+<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+<title>Comandas</title>
+<!-- cargamos un estilo de un fichero externo -->
+<link rel="stylesheet" href="nov-17-estilo.css">
+
+<style>
+.clase1 {
+color:yellow;
+}
+
+p {
+color:blue;
+}
+
+#resaltado {
+font-size:1.5em;
+}
+</style>
+</head>
+
+<!--
+Trabajo: - plantilla 1DAW-Lenguajes de Marcas
+Fecha: Noviembre 2020
+Autor: Carlos Boni
+Comentario: formularios paso a paso ...
+
+-->
+<body style="color:gray;">
+<h1 id="inicio"> FORMULARIOS paso a paso </h1>
+
+<div style="margin-left:50%;margin-right:50%;background-color:white; height:200;">
+
+TEXTO DIV
+
+</div>
+
+<!--
+Agregar el campo Cantidad de Comensales
+usando campo input de tipo texto 
+con los atributos min, max, step
+
+-->
+ 
+
+<form>
+<p class="clase1">Texto con clase 1</p>
+
+<label style="margin-left:20px;"for="elegirmesa">¿En qué mesa está usted?</label>
+<input style="margin-bottom:20px;" type="text" id="elegirmesa" name="idmesa" value="(1-5)">
+<br>
+<label id="resaltado" for="botonfinal">Revise y díganos lo que desea</label>
+<input style="color:red" type="submit" id="botonfinal" value="enviar">
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Ejercicio Menu Sandwich</title>
+
+	<!-- Etiqueta para que funcione el responsive en dispositivos móviles. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Enlace a una librería para que aparezca el icono del menú cuando abrimos la web desde un dispositivo móvil. -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+	
+		/* Añadimos el color negro de fondo al menú. */
+		.menu {
+		  background-color: #333;
+		  overflow: hidden;
+		  font-family: Trebuchet MS;
+		}
+
+		/* Estilo para los enlaces del menú. */
+		.menu a {
+		  float: left; /* se eleva y se tira hacia la izquierda */
+		  display: block; /* usa todo el ancho del contenedor; comportamiento tipo punto y aparte */
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+		/* Cambiamos el color de los enlaces del menú cuando pasamos el ratón por encima. */
+		.menu a:hover {
+		  background-color: #ddd; /* fondo plata */
+		  color: grey;
+		}
+
+		/* Añadimos un color por defecto a "Inicio" para que siempre sea del mismo color, y no cambie cuando pasamos el ratón por encima. */
+		.menu a.active {
+		  background-color: #bf434d;
+		  color: white;
+		}
+
+		/* Eliminamos el icono que despliega el menu, sólo aparecerá en los dispositivos móviles. */
+		.menu .icono {
+		  display: none;
+		}
+		
+
+		/* Cuando la resolución sea menor de 600 píxeles de ancho, eliminamos todos los enlaces, excepto por el primero ("Inicio"). Mostramos el icono que abre y cierra el menú. (.icono) */
+		@media screen and (max-width: 600px) {
+		  .menu a:not(:first-child) {display: none;}
+		  .menu a.icono {
+			float: right;
+			display: block;
+		  }
+
+		.menu a:hover {
+		  color: grey;
+		}
+		}
+
+		/* La  clase "responsive" se añade al menu con javascript cuando el usuario hace clic en el icono. Esta clase hace que se vea de forma correcta en dispositivos pequeños. (muestra los enlaces de forma vertical en vez de horizontal) */
+		@media screen and (max-width: 600px) {
+		  .menu.responsive {position: relative;}
+		  .menu.responsive a.icono {
+			position: absolute;
+			right: 0;
+			top: 0;
+		  }
+		  .menu.responsive a {
+			float: none;
+			display: block;
+			text-align: left;
+		  }
+		}
+		
+	
+	</style>
+
+</head>
+
+
+<body>
+
+
+	<!-- Div con el menú. -->
+	<div class="menu" id="miMenu">
+	  <a href="#inicio" class="active">Inicio</a>
+	  <a href="#Tema">Tema</a>
+	  <a href="#Contacto">Contacto</a>
+	  <a href="#Nosotros">Nosotros</a>
+	  <!-- Icono en javascript que ocultaremos mediante el css cuando estemos en la pagina web desde un PC o tablet, aparece sólo cuando entramos a la web desde un dispositivo móvil. -->
+	  <a href="javascript:void(0);" class="icono" onclick="myFunction()">
+		<!-- Esta clase debe llamarse así para que podamos sacar el icono de la librería. -->
+		<i class="fa fa-bars"></i>
+	  </a>
+	</div>
+
+
+	<script type="text/javascript">
+			
+		<!-- Para que funcione el menú sandwich, haciendo clic aparece y desaparece alternadamente. -->
+		function myFunction() {
+		  var x = document.getElementById("miMenu");
+		  if (x.className === "menu") {
+			x.className += " responsive";
+		  } else {
+			x.className = "menu";
+		  }
+		}
+
+		// ADAPTAR Pone la clase .active al elemento del menu que esté seleccionado, para destacarlo
+		var menu = document.getElementById("miMenu");
+		var entradas = menu.getElementsByClassName("a");
+		for (var i = 0; i < entradas.length; i++) {
+		  entradas[i].addEventListener("click", function() {
+		  var actual = document.getElementsByClassName("active");
+		  actual[0].className = actual[0].className.replace(" active", "");
+		  this.className += " active";
+		  });
+		}
+	</script>
+
+
+
+</body>
+</html>

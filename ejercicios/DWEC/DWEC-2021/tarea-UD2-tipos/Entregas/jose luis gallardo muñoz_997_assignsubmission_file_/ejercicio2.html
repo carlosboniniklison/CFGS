@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+    
+</head>
+
+<body>
+    <h3>ejercicio 1</h3>
+    <form>
+        <input type="text" name="aux1" id="aux1"/><br>
+        <input type="text" name="aux2" id="aux2"/><br>
+        <button onclick="funcion1()">comprobar</button>
+
+    </form>
+
+    <h3>ejercicio 2/3</h3>
+    <form>
+        <input type="number" name="aux1_2" id="aux1_2"/><br>
+        <input type="number" name="aux2_2" id="aux2_2"/><br>
+        <button onclick="funcion2()">comprobar</button>
+
+    </form>
+
+    <h3>ejercicio 4</h3>
+    <form>
+        <input type="number" name="aux1_4" id="aux1_4"/><br>
+        <input type="number" name="aux2_4" id="aux2_4"/><br>
+        <button onclick="funcion4()">comprobar</button>
+
+    </form>
+
+
+    <h3>ejercicio 5</h3>
+    <form>
+        <input type="number" name="aux1_5" id="aux1_5"  step=3 min=3 /><br>
+        <input type="number" name="aux2_5" id="aux2_5" step=3 min=3/><br>
+        <button onclick="funcion5()">comprobar</button>
+
+    </form>
+    
+
+    <script>  
+		//jose luis gallardo muñoz
+
+        //paso 1 
+   
+     function funcion1() {
+        let aux1= parseInt(document.getElementById("aux1_4").value);
+        let aux2=  parseInt(document.getElementById("aux2_4").value);
+        let aux3=20;
+        if(!isNaN(aux1)&&!isNaN(aux2)){
+            alert( `el mayor es  ${Math.max(aux1,aux2,aux3)}`);
+        }else{
+            alert("algo no es un numero");
+        }
+           
+        }
+        //paso 2 paso3
+        function funcion2() {
+        let aux1= parseInt(document.getElementById("aux1_2").value);
+        let aux2=  parseInt(document.getElementById("aux2_2").value);
+        let aux3=20;
+        if(aux1===aux2||aux1===20||aux2===20){
+           alert("algun numero es igual");
+        }else{
+            alert( `el mayor es  ${Math.max(aux1,aux2,aux3)}`);
+        }
+           
+        }
+        
+
+        //paso 4
+        function funcion4() {
+        let aux1= parseInt(document.getElementById("aux1_4").value);
+        let aux2=  parseInt(document.getElementById("aux2_4").value);
+        let aux3=20;
+        if(aux1%3==0&&aux2%3==0){
+        if(aux1===aux2||aux1===20||aux2===20){
+           alert("algun numero es igual");
+        }else{
+            alert( `el mayor es  ${Math.max(aux1,aux2,aux3)}`);
+        }   
+    }
+    else{
+        alert("algun numero no es multiplo de 3");
+    }
+
+           
+        }
+
+
+
+        //paso 5
+        function funcion5() {
+        let aux1= parseInt(document.getElementById("aux1_5").value);
+        let aux2=  parseInt(document.getElementById("aux2_5").value);
+        let aux3=20;
+        if(aux1===aux2||aux1===20||aux2===20){
+           alert("algun numero es igual");
+        }else{
+            alert( `el mayor es  ${Math.max(aux1,aux2,aux3)}`);
+        }
+           
+        }
+    </script>
+
+</body>
+
+</html>

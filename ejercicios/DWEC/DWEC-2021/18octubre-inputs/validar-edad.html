@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <form>
+        <p>Ingrese su nombre:<input type="text" id="nombre"></p>
+        <p>Ingrese su edad:<input type="text" id="edad"></p>
+        <p><input type="button" value="Confirmar" onClick="validarEdad()"></p>
+    </form>
+
+    <script>
+        function validarEdad() {
+            let nom = document.getElementById('nombre').value;
+            let ed = parseInt(document.getElementById('edad').value);
+            if (ed>=0 && ed<=100) {
+                alert('La edad ' + ed +' es razonable.');
+            } else {
+                alert('La edad ' + ed +' NO es razonable. Por favor corríjala.');
+            };    
+            
+        }
+    </script>
+
+</body>
+
+</html>
