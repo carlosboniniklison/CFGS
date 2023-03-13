@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<-- usar con TryIt de W3Schools -->
+<-- https://www.w3schools.com/xml/tryit.asp?filename=try_xpath_select_cdnodes -->
+<-- *** -->
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        showResult(xhttp.responseXML);
+    }
+};
+xhttp.open("GET", "books.xml", true);
+xhttp.send(); 
+
+function showResult(xml) {
+
+    var txt = "|-----Todos los apellidos-----|"+"<br>";
+    
+    /*Adrian Mata ALcuña 1ºDAM DNI:53895279T*/
+
+    pathA = "/bookstore/book/author";/*Saco todos los autores de todos los libros como si fueran todos los apellidos de todos los usuarios La ruta en el xml seria "/baseDatos/usuario/apellido"*/
+    
+    pathB = "//book[@category='web']/author";/*Para cualquier libro cuya atributo sea web me muestra todos sus autores,si esto fueran usuarios sacaria  el username de todos los usarios cuyo atributo estado fuera activo La ruta en el xml seria "//usuario[@estado='activo']/username"*/
+    
+    pathC = "/bookstore/book[1]/*[position()=2]";/*Para el primer libro obtengo su elemento numero 2,en el XML que hice obtendria apellido,aqui sale el autor La ruta en el xml seria "/baseDatos/usuario[1]/*[position()=2]"*/
+    
+    pathD="//node()[@*]";/*Aqui busco para cualquier nodo sin importar donde este a aquellos elemento que tengan cualquier atributo sin importar como se llame el atributo,aqui la ruta del xml en mi fichero seria la misma*/
+   
+        var nodesA = xml.evaluate(pathA, xml, null, XPathResult.ANY_TYPE, null);
+        var resultA = nodesA.iterateNext();
+        while (resultA) {
+            txt += resultA.childNodes[0].nodeValue + "<br>";
+            resultA = nodesA.iterateNext();
+        } 
+        
+        txt+="<br>"+"|----El username de todos los usuarios cuyo estado sea activo-----|"+"<br>";
+        var nodesB = xml.evaluate(pathB, xml, null, XPathResult.ANY_TYPE, null);
+        var resultB = nodesB.iterateNext();
+        while (resultB) {
+            txt += resultB.childNodes[0].nodeValue + "<br>";
+            resultB = nodesB.iterateNext();
+        } 
+        
+        txt+="<br>"+"|-----El valor del segundo elemento del primer usuario----|"+"<br>";
+        var nodesC = xml.evaluate(pathC, xml, null, XPathResult.ANY_TYPE, null);
+        var resultC = nodesC.iterateNext();
+        while (resultC) {
+            txt += resultC.childNodes[0].nodeValue + "<br>";
+            resultC = nodesC.iterateNext();
+        } 
+        
+         txt+="<br>"+"|----El nombre y el valor de todos los elementos que tengan atributos----|"+"<br>";
+        var nodesD = xml.evaluate(pathD, xml, null, XPathResult.ANY_TYPE, null);
+        var resultD = nodesD.iterateNext();
+        while (resultD) {
+        /*obtengo el nombre del nodo y luego su valor*/
+            txt += resultD.nodeName +" "+resultD.childNodes[0].nodeValue+ "<br>";
+            resultD = nodesD.iterateNext();
+        } 
+    
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>

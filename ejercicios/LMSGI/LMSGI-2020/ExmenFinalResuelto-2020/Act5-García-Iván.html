@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<-- usar con TryIt de W3Schools -->
+<-- https://www.w3schools.com/xml/tryit.asp?filename=try_xpath_select_cdnodes -->
+<-- *** -->
+
+<--Iván García Martín-->
+<--Ejercicio 5: Escribir la ruta Xpath para buscar elementos en un XML-->
+<--Lenguajes de Marcas-->
+<--Curso 1º DAM M-->
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        showResult(xhttp.responseXML);
+    }
+};
+
+xhttp.open("GET", "books.xml", true);
+xhttp.send(); 
+
+function showResult(xml) {
+
+    var txt ="<br>" + "Los Apellidos de los Usuarios son: ";
+	
+    pathA = "/bookstore/book/author";
+    pathB = "//book[@category='cooking']/author";
+    
+    pathC = "/bookstore/book[1]/title";
+    pathD="//node()[@*]";
+   
+        var nodesA = xml.evaluate(pathA, xml, null, XPathResult.ANY_TYPE, null);
+        var resultA = nodesA.iterateNext();
+        while (resultA) {
+            txt += resultA.childNodes[0].nodeValue + "<br>";
+            resultA = nodesA.iterateNext();
+        } 
+        
+        txt+="<br>" + "El Username de los usuarios activos son: ";
+        var nodesB = xml.evaluate(pathB, xml, null, XPathResult.ANY_TYPE, null);
+        var resultB = nodesB.iterateNext();
+        while (resultB) {
+            txt += resultB.childNodes[0].nodeValue + "<br>";
+            resultB = nodesB.iterateNext();
+        } 
+        
+        txt+="<br>" + "El Idioma es: ";
+        var nodesC = xml.evaluate(pathC, xml, null, XPathResult.ANY_TYPE, null);
+        var resultC = nodesC.iterateNext();
+        while (resultC) {
+            txt += resultC.getAttribute('lang') + "<br>";
+            resultC = nodesC.iterateNext();
+        } 
+        
+         txt+="<br>" + "El Nombre y el Valor los Elementos son: ";
+        var nodesD = xml.evaluate(pathD, xml, null, XPathResult.ANY_TYPE, null);
+        var resultD = nodesD.iterateNext();
+        while (resultD) {
+            txt += resultD.nodeName +" "+resultD.childNodes[0].nodeValue+ "<br>";
+            resultD = nodesD.iterateNext();
+        } 
+    
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>

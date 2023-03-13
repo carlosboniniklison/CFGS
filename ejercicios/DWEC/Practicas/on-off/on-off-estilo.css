@@ -1,0 +1,29 @@
+:root {
+    --borde-oscuro:black;
+    --borde-claro:gray;
+    --fondo-oscuro:gainsboro;
+    --fondo-claro:whitesmoke;
+    --texto-oscuro:white;
+    --texto-claro:blue;
+}
+
+.boton {
+display:inline-block;
+padding:20px;
+font-size:x-large;
+border-radius:3px;
+border-style:solid;
+border-width:1px;
+}
+
+.btnOn {
+    color:var(--texto-oscuro);
+    border-color:var(--borde-oscuro);
+    background-color:var(fondo-oscuro);
+}
+
+.btnOff{
+    color:var(--texto-claro);
+    border-color:var(--borde-claro);
+    background-color:var(fondo-claro);
+}

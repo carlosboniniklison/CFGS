@@ -1,0 +1,106 @@
+{
+  "format": 1,
+  "restore": {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    "C:\\profesorcarlos.es\\1DAW-EED\\t3\\ficherosXML\\LeerXML\\LeerXML.csproj": {}
+  },
+  "projects": {
+    "C:\\profesorcarlos.es\\1DAW-EED\\t3\\ficherosXML\\LeerXML\\LeerXML.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\profesorcarlos.es\\1DAW-EED\\t3\\ficherosXML\\LeerXML\\LeerXML.csproj",
+        "projectName": "LeerXML",
+        "projectPath": "C:\\profesorcarlos.es\\1DAW-EED\\t3\\ficherosXML\\LeerXML\\LeerXML.csproj",
+        "packagesPath": "C:\\Users\\1DAM\\.nuget\\packages\\",
+        "outputPath": "C:\\profesorcarlos.es\\1DAW-EED\\t3\\ficherosXML\\LeerXML\\obj\\",
+=======
+    "C:\\CarlosBoni\\profesorcarlos.es\\1DAW-EED\\t3\\ficherosXML\\LeerXML\\LeerXML.csproj": {}
+  },
+  "projects": {
+    "C:\\CarlosBoni\\profesorcarlos.es\\1DAW-EED\\t3\\ficherosXML\\LeerXML\\LeerXML.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CarlosBoni\\profesorcarlos.es\\1DAW-EED\\t3\\ficherosXML\\LeerXML\\LeerXML.csproj",
+        "projectName": "LeerXML",
+        "projectPath": "C:\\CarlosBoni\\profesorcarlos.es\\1DAW-EED\\t3\\ficherosXML\\LeerXML\\LeerXML.csproj",
+        "packagesPath": "C:\\Users\\Profesor\\.nuget\\packages\\",
+        "outputPath": "C:\\CarlosBoni\\profesorcarlos.es\\1DAW-EED\\t3\\ficherosXML\\LeerXML\\obj\\",
+>>>>>>> Stashed changes
+=======
+    "C:\\CarlosBoni\\profesorcarlos.es\\1DAW-EED\\t3\\ficherosXML\\LeerXML\\LeerXML.csproj": {}
+  },
+  "projects": {
+    "C:\\CarlosBoni\\profesorcarlos.es\\1DAW-EED\\t3\\ficherosXML\\LeerXML\\LeerXML.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\CarlosBoni\\profesorcarlos.es\\1DAW-EED\\t3\\ficherosXML\\LeerXML\\LeerXML.csproj",
+        "projectName": "LeerXML",
+        "projectPath": "C:\\CarlosBoni\\profesorcarlos.es\\1DAW-EED\\t3\\ficherosXML\\LeerXML\\LeerXML.csproj",
+        "packagesPath": "C:\\Users\\Profesor\\.nuget\\packages\\",
+        "outputPath": "C:\\CarlosBoni\\profesorcarlos.es\\1DAW-EED\\t3\\ficherosXML\\LeerXML\\obj\\",
+>>>>>>> Stashed changes
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+          "C:\\Users\\1DAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\Profesor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Stashed changes
+=======
+          "C:\\Users\\Profesor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Stashed changes
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes
+        }
+      }
+    }
+  }
+}

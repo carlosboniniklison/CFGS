@@ -1,0 +1,26 @@
+C:\CarlosBoni\ProgramasDeConsola\TrianguloBasico\obj\Debug\netcoreapp3.1\TrianguloBasico.AssemblyInfoInputs.cache
+C:\CarlosBoni\ProgramasDeConsola\TrianguloBasico\obj\Debug\netcoreapp3.1\TrianguloBasico.AssemblyInfo.cs
+C:\CarlosBoni\ProgramasDeConsola\TrianguloBasico\obj\Debug\netcoreapp3.1\TrianguloBasico.csproj.CoreCompileInputs.cache
+C:\CarlosBoni\ProgramasDeConsola\TrianguloBasico\obj\Debug\netcoreapp3.1\TrianguloBasico.csprojAssemblyReference.cache
+C:\CarlosBoni\ProgramasDeConsola\TrianguloBasico\bin\Debug\netcoreapp3.1\TrianguloBasico.exe
+C:\CarlosBoni\ProgramasDeConsola\TrianguloBasico\bin\Debug\netcoreapp3.1\TrianguloBasico.deps.json
+C:\CarlosBoni\ProgramasDeConsola\TrianguloBasico\bin\Debug\netcoreapp3.1\TrianguloBasico.runtimeconfig.json
+C:\CarlosBoni\ProgramasDeConsola\TrianguloBasico\bin\Debug\netcoreapp3.1\TrianguloBasico.runtimeconfig.dev.json
+C:\CarlosBoni\ProgramasDeConsola\TrianguloBasico\bin\Debug\netcoreapp3.1\TrianguloBasico.dll
+C:\CarlosBoni\ProgramasDeConsola\TrianguloBasico\bin\Debug\netcoreapp3.1\TrianguloBasico.pdb
+C:\CarlosBoni\ProgramasDeConsola\TrianguloBasico\obj\Debug\netcoreapp3.1\TrianguloBasico.dll
+C:\CarlosBoni\ProgramasDeConsola\TrianguloBasico\obj\Debug\netcoreapp3.1\TrianguloBasico.pdb
+C:\CarlosBoni\ProgramasDeConsola\TrianguloBasico\obj\Debug\netcoreapp3.1\TrianguloBasico.genruntimeconfig.cache
+C:\profesorcarlos.es\1DAW-EED\Programas de Consola\TrianguloBasico\bin\Debug\netcoreapp3.1\TrianguloBasico.exe
+C:\profesorcarlos.es\1DAW-EED\Programas de Consola\TrianguloBasico\bin\Debug\netcoreapp3.1\TrianguloBasico.deps.json
+C:\profesorcarlos.es\1DAW-EED\Programas de Consola\TrianguloBasico\bin\Debug\netcoreapp3.1\TrianguloBasico.runtimeconfig.json
+C:\profesorcarlos.es\1DAW-EED\Programas de Consola\TrianguloBasico\bin\Debug\netcoreapp3.1\TrianguloBasico.runtimeconfig.dev.json
+C:\profesorcarlos.es\1DAW-EED\Programas de Consola\TrianguloBasico\bin\Debug\netcoreapp3.1\TrianguloBasico.dll
+C:\profesorcarlos.es\1DAW-EED\Programas de Consola\TrianguloBasico\bin\Debug\netcoreapp3.1\TrianguloBasico.pdb
+C:\profesorcarlos.es\1DAW-EED\Programas de Consola\TrianguloBasico\obj\Debug\netcoreapp3.1\TrianguloBasico.csprojAssemblyReference.cache
+C:\profesorcarlos.es\1DAW-EED\Programas de Consola\TrianguloBasico\obj\Debug\netcoreapp3.1\TrianguloBasico.AssemblyInfoInputs.cache
+C:\profesorcarlos.es\1DAW-EED\Programas de Consola\TrianguloBasico\obj\Debug\netcoreapp3.1\TrianguloBasico.AssemblyInfo.cs
+C:\profesorcarlos.es\1DAW-EED\Programas de Consola\TrianguloBasico\obj\Debug\netcoreapp3.1\TrianguloBasico.csproj.CoreCompileInputs.cache
+C:\profesorcarlos.es\1DAW-EED\Programas de Consola\TrianguloBasico\obj\Debug\netcoreapp3.1\TrianguloBasico.dll
+C:\profesorcarlos.es\1DAW-EED\Programas de Consola\TrianguloBasico\obj\Debug\netcoreapp3.1\TrianguloBasico.pdb
+C:\profesorcarlos.es\1DAW-EED\Programas de Consola\TrianguloBasico\obj\Debug\netcoreapp3.1\TrianguloBasico.genruntimeconfig.cache

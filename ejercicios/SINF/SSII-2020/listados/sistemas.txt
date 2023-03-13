@@ -1,0 +1,21 @@
+ El volumen de la unidad C es 1DAM
+ El n£mero de serie del volumen es: C610-C70A
+
+ Directorio de C:\CarlosBoni\Sistemas
+
+10/11/2020  12:08    <DIR>          .
+10/11/2020  12:08    <DIR>          ..
+20/10/2020  12:32             6.002 DiagramaBasicoRed.drawio
+20/10/2020  12:34             9.266 DiagramaBasicoRedEstrellas.drawio
+20/10/2020  16:11             6.698 DiagramaComplicadoEjemplo.drawio
+21/10/2020  07:58                85 DiagramaEntreTodosMiercoles21oct.drawio
+20/10/2020  12:36                85 DiagramaInicialdeRedLocal.drawio
+20/10/2020  13:17            64.605 DiagramaInicialdeRedLocal.jpg
+20/10/2020  13:15            69.340 DiagramaInicialdeRedLocal.png
+10/11/2020  12:25    <DIR>          listados
+20/10/2020  16:13                85 RedenBlancoNueva.drawio
+20/10/2020  16:46            52.924 RedenBlancoNueva.jpg
+20/10/2020  16:44            63.810 RedenBlancoNueva.png
+21/10/2020  11:43    <DIR>          repos
+              10 archivos        272.900 bytes
+               4 dirs  191.031.492.608 bytes libres

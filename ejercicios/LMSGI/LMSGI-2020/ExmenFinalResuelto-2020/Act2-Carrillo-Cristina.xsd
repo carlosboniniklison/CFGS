@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Cristina Carrillo Reyes 1 DAM-M -->
+<!-- DNI 74696006-X-->
+<!-- Para hacerlo he seguido el ejercicio que hicimos en clase -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="usuarios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="usuario" minOccurs="0" maxOccurs="unbounded"><!-- usuarios a insertar de 0 a ilimitados-->
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="apellido" type="xs:string" minOccurs="1" maxOccurs="2"/><!-- de uno a dos apellidos-->
+              <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="2"/><!-- de uno a dos nombres-->
+              <xs:element name="fecha_de_registro" type="xs:string" minOccurs="1" maxOccurs="1"/><!-- minimo debe haber una fecha de registro-->
+              <xs:element name="username" type="xs:string" minOccurs="1" maxOccurs="1"/><!-- minimo debe haber un username-->
+              <xs:element name="fecha_de_baja" type="xs:string" minOccurs="0" maxOccurs="1"/><!-- puede no haber,o haber uno-->
+            </xs:sequence>
+            <xs:attribute name="estado" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

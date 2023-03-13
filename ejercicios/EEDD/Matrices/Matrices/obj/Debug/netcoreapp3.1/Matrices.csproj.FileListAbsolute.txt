@@ -1,0 +1,13 @@
+C:\CarlosBoni\Entornos\Matrices\Matrices\bin\Debug\netcoreapp3.1\Matrices.exe
+C:\CarlosBoni\Entornos\Matrices\Matrices\bin\Debug\netcoreapp3.1\Matrices.deps.json
+C:\CarlosBoni\Entornos\Matrices\Matrices\bin\Debug\netcoreapp3.1\Matrices.runtimeconfig.json
+C:\CarlosBoni\Entornos\Matrices\Matrices\bin\Debug\netcoreapp3.1\Matrices.runtimeconfig.dev.json
+C:\CarlosBoni\Entornos\Matrices\Matrices\bin\Debug\netcoreapp3.1\Matrices.dll
+C:\CarlosBoni\Entornos\Matrices\Matrices\bin\Debug\netcoreapp3.1\Matrices.pdb
+C:\CarlosBoni\Entornos\Matrices\Matrices\obj\Debug\netcoreapp3.1\Matrices.csprojAssemblyReference.cache
+C:\CarlosBoni\Entornos\Matrices\Matrices\obj\Debug\netcoreapp3.1\Matrices.AssemblyInfoInputs.cache
+C:\CarlosBoni\Entornos\Matrices\Matrices\obj\Debug\netcoreapp3.1\Matrices.AssemblyInfo.cs
+C:\CarlosBoni\Entornos\Matrices\Matrices\obj\Debug\netcoreapp3.1\Matrices.csproj.CoreCompileInputs.cache
+C:\CarlosBoni\Entornos\Matrices\Matrices\obj\Debug\netcoreapp3.1\Matrices.dll
+C:\CarlosBoni\Entornos\Matrices\Matrices\obj\Debug\netcoreapp3.1\Matrices.pdb
+C:\CarlosBoni\Entornos\Matrices\Matrices\obj\Debug\netcoreapp3.1\Matrices.genruntimeconfig.cache

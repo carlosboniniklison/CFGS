@@ -1,0 +1,101 @@
+<!-- *******************************************
+ * Autor: Yuliia Melnyk
+ * Curso: 1DAM-M
+******************************************* -->
+
+<!DOCTYPE html>
+
+<-- usar con Visual Studio o XAMPP -->
+<-- *** -->
+
+<html>
+
+<head>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                showApellido(this.responseXML);
+                showNickName(this.responseXML);
+                showElemento(this.responseXML);
+                ifHasAtribute(this.responseXML);
+
+            }
+        };
+        xhttp.open("GET", "Act1-Melnyk-Yuliia.xml", true);
+        xhttp.send();
+
+        function showApellido(xml) {
+            var txt = "";
+            path = "/list/user/apellido"
+            if (xml.evaluate) {
+                var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+                var result = nodes.iterateNext();
+                while (result) {
+                    txt += result.childNodes[0].nodeValue + "<br>";
+                    result = nodes.iterateNext();
+                }
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+
+        function showNickName(xml) {
+            var txt = "";
+            path = "/list/user[@estado='activo']/username"
+            if (xml.evaluate) {
+                var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+                var result = nodes.iterateNext();
+                while (result) {
+                    txt += result.childNodes[0].nodeValue + "<br>";
+                    result = nodes.iterateNext();
+                }
+            }
+            document.getElementById("demo2").innerHTML = txt;
+        }
+
+        function showElemento(xml) {
+            var txt = "";
+            path3 = "/list/user[1]"
+            if (xml.evaluate) {
+                var nodes = xml.evaluate(path3, xml, null, XPathResult.ANY_TYPE, null);
+                var result = nodes.iterateNext();
+                while (result) {
+                    txt += result.children[1].textContent + "<br>";
+                    result = nodes.iterateNext();
+                }
+            }
+            document.getElementById("demo3").innerHTML = txt;
+        }
+
+            function ifHasAtribute(xml) {
+            var txt = "";
+            path = "/list/user[@estado]"
+            if (xml.evaluate) {
+                var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+                var result = nodes.iterateNext();
+                while (result) {
+                    txt += result.nodeName + "<br>";
+                    result = nodes.iterateNext();
+
+                }
+            }
+            document.getElementById("demo4").innerHTML = txt;
+        }
+
+    </script>
+</head>
+
+<body>
+    <p>Ejercicio 1</p>
+    <p id="demo"></p></br>
+    <p>Ejercicio 2</p>
+    <p id="demo2"></p></br>
+    <p>Ejercicio 3</p>
+    <p id="demo3"></p></br>
+    <p>Ejercicio 4</p>
+    <p id="demo4"></p></br>
+
+
+</body>
+
+</html>

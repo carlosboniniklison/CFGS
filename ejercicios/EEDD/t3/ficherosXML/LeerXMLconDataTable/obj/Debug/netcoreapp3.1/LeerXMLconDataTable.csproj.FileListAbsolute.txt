@@ -1,0 +1,11 @@
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\LeerXMLconDataTable\obj\Debug\netcoreapp3.1\LeerXMLconDataTable.csprojAssemblyReference.cache
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\LeerXMLconDataTable\obj\Debug\netcoreapp3.1\LeerXMLconDataTable.AssemblyInfoInputs.cache
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\LeerXMLconDataTable\obj\Debug\netcoreapp3.1\LeerXMLconDataTable.AssemblyInfo.cs
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\LeerXMLconDataTable\bin\Debug\netcoreapp3.1\LeerXMLconDataTable.exe
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\LeerXMLconDataTable\bin\Debug\netcoreapp3.1\LeerXMLconDataTable.deps.json
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\LeerXMLconDataTable\bin\Debug\netcoreapp3.1\LeerXMLconDataTable.runtimeconfig.json
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\LeerXMLconDataTable\bin\Debug\netcoreapp3.1\LeerXMLconDataTable.runtimeconfig.dev.json
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\LeerXMLconDataTable\bin\Debug\netcoreapp3.1\LeerXMLconDataTable.dll
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\LeerXMLconDataTable\bin\Debug\netcoreapp3.1\LeerXMLconDataTable.pdb
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\LeerXMLconDataTable\obj\Debug\netcoreapp3.1\LeerXMLconDataTable.dll
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\LeerXMLconDataTable\obj\Debug\netcoreapp3.1\LeerXMLconDataTable.pdb

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On-Off usando javascript y jquery</title>
+    <!-- una hoja de estilos personalizada-->
+    <link href="on-off-estilo.css" rel="stylesheet" type="text/css" />
+    <!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+</head>
+
+<body onload="comenzar()">
+    <h3>variar funcionalidad del botón</h3>
+    <form>
+        <label for="btnjs">Hacerlo con JavaScript</label>
+        <input type="button" id="btnjs" onclick="conJs()" value="con JS" />
+        <br />
+        <label for="btnjq">Hacerlo con jQuery</label>
+        <input type="button" id="btnjq" onclick="conJq()" value="con JQ" />
+    </form>
+    <br />
+    <button id="boton" class="boton btnOff">BOTÓN INACTIVO</button>
+
+    
+    <!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+    <script src="on-off-scripts-paso2.js"></script>
+</body>
+
+</html>

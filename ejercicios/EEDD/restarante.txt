@@ -1,0 +1,27 @@
+draw.io
+https://app.diagrams.net/
+Sistema de pedidos para consumir en mesa
+
+mesa
+  cod de reserva
+  id de la mesa
+  nro de comensales
+  hora
+  comandas
+  modos de pago
+  facturas
+
+
+empleados
+  tipo (cocinero, camarero, somellier, rrpp, etc)
+
+
+menu
+  codigo qr
+  stock
+  precios
+
+
+número de mesas
+aforo
+aplicacion

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- una hoja de estilos personalizada-->
+    <link href="./validar.css" rel="stylesheet" type="text/css" />
+
+    <title>Validar Formulario</title>
+</head>
+
+<body>
+
+    <label for="campo">Su mensaje es:</label>
+    <br /><br />
+    <input name="mensaje" id="campo" type="text" rows="5" placeholder="Escriba su texto" />
+    <br /><br />
+    <p>DEMUESTRE QUE NO ES UN ROBOT</p>
+    <p>Escriba en la casilla de abajo el año en que estamos ahora</p>
+    <input id="anio" type="text"/>
+    
+    <button onclick="comprobar()">COMPROBAR</button>
+
+
+    <!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+    <script src="./validar.js"></script>
+</body>
+
+</html>

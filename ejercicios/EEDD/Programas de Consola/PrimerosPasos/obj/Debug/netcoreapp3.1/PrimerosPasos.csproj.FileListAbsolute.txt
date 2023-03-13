@@ -1,0 +1,13 @@
+C:\CarlosBoni\ProgramasDeConsola\PrimerosPasos\bin\Debug\netcoreapp3.1\PrimerosPasos.exe
+C:\CarlosBoni\ProgramasDeConsola\PrimerosPasos\bin\Debug\netcoreapp3.1\PrimerosPasos.deps.json
+C:\CarlosBoni\ProgramasDeConsola\PrimerosPasos\bin\Debug\netcoreapp3.1\PrimerosPasos.runtimeconfig.json
+C:\CarlosBoni\ProgramasDeConsola\PrimerosPasos\bin\Debug\netcoreapp3.1\PrimerosPasos.runtimeconfig.dev.json
+C:\CarlosBoni\ProgramasDeConsola\PrimerosPasos\bin\Debug\netcoreapp3.1\PrimerosPasos.dll
+C:\CarlosBoni\ProgramasDeConsola\PrimerosPasos\bin\Debug\netcoreapp3.1\PrimerosPasos.pdb
+C:\CarlosBoni\ProgramasDeConsola\PrimerosPasos\obj\Debug\netcoreapp3.1\PrimerosPasos.csprojAssemblyReference.cache
+C:\CarlosBoni\ProgramasDeConsola\PrimerosPasos\obj\Debug\netcoreapp3.1\PrimerosPasos.AssemblyInfoInputs.cache
+C:\CarlosBoni\ProgramasDeConsola\PrimerosPasos\obj\Debug\netcoreapp3.1\PrimerosPasos.AssemblyInfo.cs
+C:\CarlosBoni\ProgramasDeConsola\PrimerosPasos\obj\Debug\netcoreapp3.1\PrimerosPasos.csproj.CoreCompileInputs.cache
+C:\CarlosBoni\ProgramasDeConsola\PrimerosPasos\obj\Debug\netcoreapp3.1\PrimerosPasos.dll
+C:\CarlosBoni\ProgramasDeConsola\PrimerosPasos\obj\Debug\netcoreapp3.1\PrimerosPasos.pdb
+C:\CarlosBoni\ProgramasDeConsola\PrimerosPasos\obj\Debug\netcoreapp3.1\PrimerosPasos.genruntimeconfig.cache
