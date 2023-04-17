@@ -23,6 +23,12 @@
   x2=prompt('Ingrese el segundo valor:','');
   x1=parseInt(x1);
   x2=parseInt(x2);
+  
+  // si quiero asegurarme de que no haya errores podría
+  // poner el 'use strict' al principio
+  // pero prefiero ver qué ocurre con las variables
+  // imprimiendo su tipo en la consola
+  console.log(x1,x2);
   if (isNaN(x1) || isNaN(x2))
   {
     document.write('Al menos uno de los dos valores ingresados no es numérico.');
