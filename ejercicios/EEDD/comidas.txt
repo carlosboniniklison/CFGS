@@ -1,0 +1,10 @@
+comidas
+bebidas
+condimento
+  postres
+  entrantes
+  primeros
+  segundos
+  infusiones
+  ingredientes
+  extras

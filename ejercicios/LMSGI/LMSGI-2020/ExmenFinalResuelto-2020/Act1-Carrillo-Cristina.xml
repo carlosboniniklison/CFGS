@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Cristina Carrillo Reyes 1 DAM-M -->
+<!-- DNI 74696006-X-->
+<!-- Para hacerlo he seguido el ejercicio que hicimos en clase -->
+<?xml-stylesheet type="text/xsl" href="Act4-Carrillo-Cristina.xsl"?> <!-- ejercicio 4 asociado al xml-->
+<usuarios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Act2-Carrillo-Cristina.xsd"> <!-- ejercicio  2  asociado al xml-->
+  <usuario estado="validado"><!-- estado no es una etiqueta, es un atributo-->
+    <apellido>Carrillo</apellido><!--etiqueta apellido-->
+    <nombre>Cristina</nombre><!--etiqueta nombre-->
+    <fecha_de_registro>21-01-2020</fecha_de_registro><!--etiqueta fecha de registro-->
+    <username>Cristi</username><!--etiqueta username-->
+    <fecha_de_baja>22-03-2020</fecha_de_baja><!--etiqueta fecha de baja-->
+  </usuario>
+  <usuario estado="inactivo">
+    <apellido>Ruiz</apellido>
+    <nombre>Javier</nombre>
+    <fecha_de_registro>12-02-1998</fecha_de_registro>
+    <username>Javi</username>
+    <fecha_de_baja>16-05-2001</fecha_de_baja>
+  </usuario>
+  <usuario estado="activo">
+    <apellido>Aviles</apellido>
+    <nombre>Jose Manuel</nombre>
+    <fecha_de_registro>06-08-2017</fecha_de_registro>
+    <username>Koalote</username>
+    <fecha_de_baja>22-03-2020</fecha_de_baja>
+  </usuario>
+  <usuario estado="inactivo">
+    <apellido>Sanchez</apellido>
+    <nombre>Maria</nombre>
+    <fecha_de_registro>09-07-2014</fecha_de_registro>
+    <username>Mary</username>
+    <fecha_de_baja>08-11-2015</fecha_de_baja>
+  </usuario>
+  <usuario estado="validado">
+    <apellido>Gato</apellido>
+    <nombre>Teodoro</nombre>
+    <fecha_de_registro>14-12-1997</fecha_de_registro>
+    <username>Teo</username>
+    <fecha_de_baja>15-07-2008</fecha_de_baja>
+  </usuario>
+</usuarios>

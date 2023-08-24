@@ -1,0 +1,284 @@
+ El volumen de la unidad C es 1DAM
+ El n£mero de serie del volumen es: C610-C70A
+
+ Directorio de c:\CarlosBoni\Sistemas
+
+20/10/2020  12:32             6.002 DiagramaBasicoRed.drawio
+20/10/2020  12:34             9.266 DiagramaBasicoRedEstrellas.drawio
+20/10/2020  16:11             6.698 DiagramaComplicadoEjemplo.drawio
+21/10/2020  07:58                85 DiagramaEntreTodosMiercoles21oct.drawio
+20/10/2020  12:36                85 DiagramaInicialdeRedLocal.drawio
+20/10/2020  16:13                85 RedenBlancoNueva.drawio
+               6 archivos         22.221 bytes
+
+     Total de archivos en la lista:
+               6 archivos         22.221 bytes
+               0 dirs  190.744.862.720 bytes libres
+ El volumen de la unidad C es 1DAM
+ El n£mero de serie del volumen es: C610-C70A
+
+ Directorio de c:\CarlosBoni\Sistemas\repos\1DAM-M-Entornos\21oct-PrimerContacto\wwwroot\css
+
+21/10/2020  12:04             1.445 site.css
+               1 archivos          1.445 bytes
+
+ Directorio de c:\CarlosBoni\Sistemas\repos\1DAM-M-Entornos\21oct-PrimerContacto\wwwroot\lib\bootstrap\dist\css
+
+21/10/2020  11:46            68.266 bootstrap-grid.css
+21/10/2020  11:46            48.494 bootstrap-grid.min.css
+21/10/2020  11:46             5.227 bootstrap-reboot.css
+21/10/2020  11:46             4.028 bootstrap-reboot.min.css
+21/10/2020  11:46           202.385 bootstrap.css
+21/10/2020  11:46           155.764 bootstrap.min.css
+               6 archivos        484.164 bytes
+
+     Total de archivos en la lista:
+               7 archivos        485.609 bytes
+               0 dirs  190.744.862.720 bytes libres
+ El volumen de la unidad C es 1DAM
+ El n£mero de serie del volumen es: C610-C70A
+
+ Directorio de c:\CarlosBoni\Entornos
+
+04/11/2020  09:33                 0 borrar.html
+               1 archivos              0 bytes
+
+ Directorio de c:\CarlosBoni\LLMM
+
+20/10/2020  09:07               483 berenjena.html
+19/10/2020  19:15               334 bloques-coloridos.html
+27/10/2020  10:36               557 caracteres-spanish.html
+28/10/2020  11:56               203 CodigoHechoEnVSC.html
+20/10/2020  16:04               733 cuestionario.html
+20/10/2020  10:21               798 div.html
+20/10/2020  08:38               712 ejerc02.html
+03/11/2020  10:02               355 nov03-ej1-ordenar2nros.html
+03/11/2020  10:19               417 nov03-ej1-ordenar2nrosLeidos.html
+03/11/2020  10:59               548 nov03-ej3-mostrarnumero.html
+03/11/2020  17:21               300 nov03-ej4-jsexterno.html
+03/11/2020  17:21               241 nov03-holamundo.html
+03/11/2020  17:06               632 nov03-js-inicio.html
+09/11/2020  19:59               581 nov09-js-typeof.html
+10/11/2020  09:35               702 nov10-js-basicos.html
+10/11/2020  09:52               642 nov10-js-basicos2.html
+10/11/2020  11:17             1.000 nov10-js-basicosvalidacion.html
+10/11/2020  10:42             1.016 nov10-js-basicosvariables.html
+27/10/2020  10:31               507 plantilla.html
+13/10/2020  10:50            11.886 salto.html
+              20 archivos         22.647 bytes
+
+ Directorio de c:\CarlosBoni\LLMM\ahora
+
+03/11/2020  17:40               535 nov03-js-inicio-externo-onclic.html
+03/11/2020  17:10               463 nov03-js-inicio-externo.html
+04/11/2020  09:33                 0 pagina-web-nueva.html
+               3 archivos            998 bytes
+
+     Total de archivos en la lista:
+              24 archivos         23.645 bytes
+               0 dirs  190.744.862.720 bytes libres
+ El volumen de la unidad C es 1DAM
+ El n£mero de serie del volumen es: C610-C70A
+
+ Directorio de c:\CarlosBoni
+
+10/11/2020  16:43             4.610 directorioszip.txt
+10/11/2020  15:31             1.918 ficheroshtml.txt
+10/11/2020  16:42             2.420 ficherosjavascript.txt
+10/11/2020  16:43            70.596 ficheroszip.txt
+               4 archivos         79.544 bytes
+
+ Directorio de c:\CarlosBoni\LLMM
+
+04/11/2020  10:13               568 ficherosgrandes.txt
+04/11/2020  10:04             1.570 listado.txt
+               2 archivos          2.138 bytes
+
+ Directorio de c:\CarlosBoni\Sistemas\listados
+
+10/11/2020  17:36             3.565 busquedas.txt
+10/11/2020  12:09             2.259 ficheros.txt
+10/11/2020  12:33             1.056 sistemas.txt
+10/11/2020  14:23           184.839 videos.txt
+10/11/2020  14:23            48.812 videos2020.txt
+               5 archivos        240.531 bytes
+
+ Directorio de c:\CarlosBoni\Sistemas\repos\1DAM-M-Entornos\21oct-PrimerContacto\obj\Debug\netcoreapp3.1
+
+21/10/2020  11:59             4.812 21oct-PrimerContacto.csproj.FileListAbsolute.txt
+               1 archivos          4.812 bytes
+
+ Directorio de c:\CarlosBoni\Sistemas\repos\1DAM-M-Entornos\21oct-PrimerContacto\wwwroot\lib\jquery
+
+21/10/2020  11:46             1.641 LICENSE.txt
+               1 archivos          1.641 bytes
+
+ Directorio de c:\CarlosBoni\Sistemas\repos\1DAM-M-Entornos\21oct-PrimerContacto\wwwroot\lib\jquery-validation-unobtrusive
+
+21/10/2020  11:46               587 LICENSE.txt
+               1 archivos            587 bytes
+
+     Total de archivos en la lista:
+              14 archivos        329.253 bytes
+               0 dirs  190.744.858.624 bytes libres
+ El volumen de la unidad C es 1DAM
+ El n£mero de serie del volumen es: C610-C70A
+ El volumen de la unidad C es 1DAM
+ El n£mero de serie del volumen es: C610-C70A
+
+ Directorio de c:\CarlosBoni\Sistemas\repos\1DAM-M-Entornos\21oct-PrimerContacto\bin\Debug\netcoreapp3.1
+
+21/10/2020  11:59           174.592 21oct-PrimerContacto.exe
+               1 archivos        174.592 bytes
+
+ Directorio de c:\CarlosBoni\Sistemas\repos\1DAM-M-Entornos\21oct-PrimerContacto\obj\Debug\netcoreapp3.1
+
+21/10/2020  11:59           174.592 21oct-PrimerContacto.exe
+               1 archivos        174.592 bytes
+
+     Total de archivos en la lista:
+               2 archivos        349.184 bytes
+               0 dirs  190.744.858.624 bytes libres
+ El volumen de la unidad C es 1DAM
+ El n£mero de serie del volumen es: C610-C70A
+
+ Directorio de c:\CarlosBoni\Sistemas
+
+20/10/2020  12:32             6.002 DiagramaBasicoRed.drawio
+20/10/2020  12:34             9.266 DiagramaBasicoRedEstrellas.drawio
+20/10/2020  16:11             6.698 DiagramaComplicadoEjemplo.drawio
+21/10/2020  07:58                85 DiagramaEntreTodosMiercoles21oct.drawio
+20/10/2020  12:36                85 DiagramaInicialdeRedLocal.drawio
+20/10/2020  16:13                85 RedenBlancoNueva.drawio
+               6 archivos         22.221 bytes
+
+     Total de archivos en la lista:
+               6 archivos         22.221 bytes
+               0 dirs  188.062.728.192 bytes libres
+ El volumen de la unidad C es 1DAM
+ El n£mero de serie del volumen es: C610-C70A
+
+ Directorio de c:\CarlosBoni\Sistemas\repos\1DAM-M-Entornos\21oct-PrimerContacto\wwwroot\css
+
+21/10/2020  12:04             1.445 site.css
+               1 archivos          1.445 bytes
+
+ Directorio de c:\CarlosBoni\Sistemas\repos\1DAM-M-Entornos\21oct-PrimerContacto\wwwroot\lib\bootstrap\dist\css
+
+21/10/2020  11:46            68.266 bootstrap-grid.css
+21/10/2020  11:46            48.494 bootstrap-grid.min.css
+21/10/2020  11:46             5.227 bootstrap-reboot.css
+21/10/2020  11:46             4.028 bootstrap-reboot.min.css
+21/10/2020  11:46           202.385 bootstrap.css
+21/10/2020  11:46           155.764 bootstrap.min.css
+               6 archivos        484.164 bytes
+
+     Total de archivos en la lista:
+               7 archivos        485.609 bytes
+               0 dirs  188.062.728.192 bytes libres
+ El volumen de la unidad C es 1DAM
+ El n£mero de serie del volumen es: C610-C70A
+
+ Directorio de c:\CarlosBoni\Entornos
+
+04/11/2020  09:33                 0 borrar.html
+               1 archivos              0 bytes
+
+ Directorio de c:\CarlosBoni\LLMM
+
+20/10/2020  09:07               483 berenjena.html
+19/10/2020  19:15               334 bloques-coloridos.html
+27/10/2020  10:36               557 caracteres-spanish.html
+28/10/2020  11:56               203 CodigoHechoEnVSC.html
+20/10/2020  16:04               733 cuestionario.html
+20/10/2020  10:21               798 div.html
+20/10/2020  08:38               712 ejerc02.html
+03/11/2020  10:02               355 nov03-ej1-ordenar2nros.html
+03/11/2020  10:19               417 nov03-ej1-ordenar2nrosLeidos.html
+03/11/2020  10:59               548 nov03-ej3-mostrarnumero.html
+03/11/2020  17:21               300 nov03-ej4-jsexterno.html
+03/11/2020  17:21               241 nov03-holamundo.html
+03/11/2020  17:06               632 nov03-js-inicio.html
+11/11/2020  08:51             1.180 nov09-js-typeof.html
+10/11/2020  09:35               702 nov10-js-basicos.html
+10/11/2020  09:52               642 nov10-js-basicos2.html
+10/11/2020  11:17             1.000 nov10-js-basicosvalidacion.html
+10/11/2020  10:42             1.016 nov10-js-basicosvariables.html
+27/10/2020  10:31               507 plantilla.html
+13/10/2020  10:50            11.886 salto.html
+              20 archivos         23.246 bytes
+
+ Directorio de c:\CarlosBoni\LLMM\ahora
+
+03/11/2020  17:40               535 nov03-js-inicio-externo-onclic.html
+03/11/2020  17:10               463 nov03-js-inicio-externo.html
+04/11/2020  09:33                 0 pagina-web-nueva.html
+               3 archivos            998 bytes
+
+     Total de archivos en la lista:
+              24 archivos         24.244 bytes
+               0 dirs  188.062.724.096 bytes libres
+ El volumen de la unidad C es 1DAM
+ El n£mero de serie del volumen es: C610-C70A
+
+ Directorio de c:\CarlosBoni
+
+10/11/2020  16:43             4.610 directorioszip.txt
+10/11/2020  15:31             1.918 ficheroshtml.txt
+10/11/2020  16:42             2.420 ficherosjavascript.txt
+10/11/2020  16:43            70.596 ficheroszip.txt
+               4 archivos         79.544 bytes
+
+ Directorio de c:\CarlosBoni\LLMM
+
+04/11/2020  10:13               568 ficherosgrandes.txt
+04/11/2020  10:04             1.570 listado.txt
+               2 archivos          2.138 bytes
+
+ Directorio de c:\CarlosBoni\Sistemas\listados
+
+11/11/2020  15:21             9.619 busquedas.txt
+10/11/2020  12:09             2.259 ficheros.txt
+11/11/2020  11:03               568 multimedia.txt
+10/11/2020  12:33             1.056 sistemas.txt
+11/11/2020  11:03               234 soloficherosmultimedia.txt
+10/11/2020  14:23           184.839 videos.txt
+10/11/2020  14:23            48.812 videos2020.txt
+               7 archivos        247.387 bytes
+
+ Directorio de c:\CarlosBoni\Sistemas\repos\1DAM-M-Entornos\21oct-PrimerContacto\obj\Debug\netcoreapp3.1
+
+21/10/2020  11:59             4.812 21oct-PrimerContacto.csproj.FileListAbsolute.txt
+               1 archivos          4.812 bytes
+
+ Directorio de c:\CarlosBoni\Sistemas\repos\1DAM-M-Entornos\21oct-PrimerContacto\wwwroot\lib\jquery
+
+21/10/2020  11:46             1.641 LICENSE.txt
+               1 archivos          1.641 bytes
+
+ Directorio de c:\CarlosBoni\Sistemas\repos\1DAM-M-Entornos\21oct-PrimerContacto\wwwroot\lib\jquery-validation-unobtrusive
+
+21/10/2020  11:46               587 LICENSE.txt
+               1 archivos            587 bytes
+
+     Total de archivos en la lista:
+              16 archivos        336.109 bytes
+               0 dirs  188.062.724.096 bytes libres
+ El volumen de la unidad C es 1DAM
+ El n£mero de serie del volumen es: C610-C70A
+ El volumen de la unidad C es 1DAM
+ El n£mero de serie del volumen es: C610-C70A
+
+ Directorio de c:\CarlosBoni\Sistemas\repos\1DAM-M-Entornos\21oct-PrimerContacto\bin\Debug\netcoreapp3.1
+
+21/10/2020  11:59           174.592 21oct-PrimerContacto.exe
+               1 archivos        174.592 bytes
+
+ Directorio de c:\CarlosBoni\Sistemas\repos\1DAM-M-Entornos\21oct-PrimerContacto\obj\Debug\netcoreapp3.1
+
+21/10/2020  11:59           174.592 21oct-PrimerContacto.exe
+               1 archivos        174.592 bytes
+
+     Total de archivos en la lista:
+               2 archivos        349.184 bytes
+               0 dirs  188.062.724.096 bytes libres

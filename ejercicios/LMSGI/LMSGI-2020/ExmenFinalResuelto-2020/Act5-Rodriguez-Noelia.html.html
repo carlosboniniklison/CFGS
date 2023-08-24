@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="pregunta1"></p>
+<p id="pregunta2"></p>
+<p id="pregunta3"></p>
+<p id="pregunta4"></p>
+
+<script>
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        showResult(xhttp.responseXML);
+    }
+};
+xhttp.open("GET", "books.xml", true);
+xhttp.send(); 
+
+function showResult(xml) {
+    var txt1 = "";
+    var txt2 = "";
+    var txt3 = "";
+    var txt4 = "";
+    
+    /* Pregunta 1 */
+    path = "/bookstore/book/author"
+    txt1 = "<table border = 1 align = center><tr><th>Autores</th>		</tr>";
+    if (xml.evaluate) {
+        var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+        var result = nodes.iterateNext();
+        while (result) {
+            txt1 += "<tr><td>" + result.childNodes[0].nodeValue + "</td></tr>";
+            result = nodes.iterateNext();
+        } 
+        txt1 += "</table>";
+    }
+    
+    /*  Pregunta 2 */
+    path = "/bookstore/book[price > 30]/price"
+    if (xml.evaluate) {
+        var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+        txt2 = "<table border = 1 align = center><tr><th>Precios</th>		</tr>";
+        var result = nodes.iterateNext();
+        while (result) {
+            txt2 += "<tr><td>" + result.childNodes[0].nodeValue + "						</td></tr>";
+            result = nodes.iterateNext();           
+        }         
+      txt2 += "</table>";
+    
+    }
+    
+    
+     /*  Pregunta 3 */
+    path = "/bookstore/book[@category='children']/title"
+ if (xml.evaluate) {
+        var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+
+		var result = nodes.iterateNext();
+		txt3 = "<table border = 1 align = center><tr><th>Libros para niños</th>		</tr>";
+		while (result) {
+            txt3 +=  "<tr><td>" + result.childNodes[0].nodeValue + "</td></tr>";
+            result =  nodes.iterateNext();         
+        }
+        txt3 += "</table>";
+      
+    }
+   
+    
+     /*  Pregunta 4 */
+    path = "/bookstore/book[1]/*"
+ 	if (xml.evaluate) {
+        var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, 		null);
+
+        var result = nodes.iterateNext();
+        txt4 = "<table border = 1 align = center><tr><th>Titulo</th>			    <th>Autor</th><th>Año</th><th>Precio</th></tr>";
+
+        while (result) {
+            txt4 += "<td>" + result.childNodes[0].nodeValue + "</td>";
+            result = nodes.iterateNext();           
+        }
+      txt4 += "</tr></table>";
+      
+    }
+    document.getElementById("pregunta1").innerHTML = txt1;
+    document.getElementById("pregunta2").innerHTML = txt2;
+    document.getElementById("pregunta3").innerHTML = txt3;
+    document.getElementById("pregunta4").innerHTML = txt4;
+    
+}
+</script>
+
+</body>
+</html>
+

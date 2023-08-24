@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="tabla.css"?>
+ <videojuegos>
+  <videojuego>
+    <nombre>SuperMario5</nombre>
+    <cod>2399</cod>
+    <consola>Nintendo X</consola>
+    <precio>
+        <valor>50</valor>
+        <moneda>$</moneda>
+    </precio>
+    <web>www.smbros.biz</web>
+ </videojuego>
+ <videojuego>
+  <nombre>Formula1</nombre>
+  <cod>2333</cod>
+  <consola>Xbox 360</consola>
+  <precio>
+   <valor>20</valor>
+   <moneda>€</moneda>
+  </precio>
+  <web>www.f1games.com</web>
+ </videojuego>
+</videojuegos>

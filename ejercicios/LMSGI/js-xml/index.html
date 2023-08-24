@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario basico</title>
+    <style>
+        a {
+            color:blue;
+            background-color:aliceblue;
+            border-radius:25px;
+            border-color:darblue;
+            border-style:solid;
+            padding:30px;
+            border-width:2px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form action="/procesar.php">
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="fname" name="Nombre" value=""><br>
+        <label for="lname">Edad:</label><br>
+        <input type="number" id="lname" name="Edad"><br><br>
+        <input type="button" onclick="mostrar()" value="Mostrar mensaje">
+      </form> 
+      <br/>
+      <br/>
+      <a target="blank" href="../todoXML/biblioteca-paso2.xml">VER BIBLIOTECA XML</a>
+      <script>
+        function mostrar () {
+            let Nombre=document.getElementById("fname").value;
+            let Edad=document.getElementById("lname").value;
+            if (Edad<18) {
+                let mensaje="Eres muy joven para esto";
+            } else {
+                let mensaje=Nombre+ " tiene "+Edad+" años."
+            }
+            alert(mensaje);
+            }
+    </script>
+</body>
+</html>

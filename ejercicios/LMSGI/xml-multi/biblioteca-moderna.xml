@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="biblioteca.xsl"?>
+<biblioteca>
+  <genero>Biblioteca Moderna</genero>
+  <libro>
+    <titulo>EL MONJE QUE VENDIÓ SU FERRARI</titulo>
+    <autor>SHARMA, ROBIN</autor>
+    <fechaPublicacion/>
+  </libro>
+  <libro>
+    <titulo>LOBA NEGRA</titulo>
+    <autor>GÓMEZ-JURADO, JUAN</autor>
+    <fechaPublicacion/>
+  </libro>
+  <libro>
+    <titulo>MISS MARTE</titulo>
+    <autor>JABOIS, MANUEL</autor>
+    <fechaPublicacion/>
+  </libro>
+</biblioteca>

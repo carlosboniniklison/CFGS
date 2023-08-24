@@ -1,0 +1,83 @@
+/* 
+Paso 6: cuando pinchemos en el título
+de la canción, veremos el autor, en cursivas, 
+centrado, y subrayado. Es necesario también
+modificar el html
+
+Autor: Carlos Boni
+1ºDAM y 1ºDAW
+
+*/
+
+body {
+    background-color: gray;
+}
+
+
+p {
+    line-height: 12px;
+}
+
+div {
+    line-height: 36px;
+}
+
+#oferta {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+    display: none;
+}
+
+#oferta p {
+    display: table-cell;
+    color: blue;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#ver {
+    display: block;
+}
+
+#ocultar {
+    display: none;
+}
+
+/* paso 2 */
+div:hover {
+
+    background-color:aquamarine;
+}
+
+/* paso 3 */
+div::first-letter {
+    font-size:2em;
+}
+
+/* paso 4 */
+div:hover p:active {
+    /* transform:scaleX(2); */
+    font-size:2em;
+}
+
+/* paso 5 */
+body > p:nth-child(2){
+    visibility:hidden;
+}
+
+/* paso 6 */
+body > p:target {
+    visibility:visible;
+    font-style: italic; /* cursivas */
+    text-align:center; /* centrado */
+    text-decoration:underline; /* subrayado */
+}
+

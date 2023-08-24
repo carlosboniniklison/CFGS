@@ -1,0 +1,11 @@
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\ParseXML\bin\Debug\netcoreapp3.1\ParseXML.exe
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\ParseXML\bin\Debug\netcoreapp3.1\ParseXML.deps.json
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\ParseXML\bin\Debug\netcoreapp3.1\ParseXML.runtimeconfig.json
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\ParseXML\bin\Debug\netcoreapp3.1\ParseXML.runtimeconfig.dev.json
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\ParseXML\bin\Debug\netcoreapp3.1\ParseXML.dll
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\ParseXML\bin\Debug\netcoreapp3.1\ParseXML.pdb
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\ParseXML\obj\Debug\netcoreapp3.1\ParseXML.csprojAssemblyReference.cache
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\ParseXML\obj\Debug\netcoreapp3.1\ParseXML.AssemblyInfoInputs.cache
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\ParseXML\obj\Debug\netcoreapp3.1\ParseXML.AssemblyInfo.cs
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\ParseXML\obj\Debug\netcoreapp3.1\ParseXML.dll
+C:\XAMPP\htdocs\profesorcarlos.es\1DAW-EED\t3\ficherosXML\ParseXML\obj\Debug\netcoreapp3.1\ParseXML.pdb

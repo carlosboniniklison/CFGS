@@ -1,0 +1,50 @@
+/* 
+Paso 1: quitar pseudos al estilo original y ponerlo 
+en fichero aparte
+
+Autor: Carlos Boni
+1ºDAM y 1ºDAW
+
+*/
+
+body {
+    background-color: gray;
+}
+
+
+p {
+    line-height: 12px;
+}
+
+div {
+    line-height: 36px;
+}
+
+#oferta {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+    display: none;
+}
+
+#oferta p {
+    display: table-cell;
+    color: blue;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#ver {
+    display: block;
+}
+
+#ocultar {
+    display: none;
+}

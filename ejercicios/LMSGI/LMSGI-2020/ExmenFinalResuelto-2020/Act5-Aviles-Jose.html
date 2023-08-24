@@ -1,0 +1,89 @@
+<!-- 51184151C | JOSE MANUEL AVILES RAMIREZ | 1 DAM-M -->
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <p id="demo"></p>
+
+  <script>
+    var xmlStr = `<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Act4-Aviles-Jose.xslt"?>
+<usuarios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Act2-Aviles-Jose.xsd">
+<usuario estado="activo">
+  <apellido>Garcia</apellido>
+  <nombre>Antonio</nombre>
+  <fechaReg>22/03/2020</fechaReg>
+  <nick>antoniog</nick>
+  <fechaBaja>25/03/2020</fechaBaja>
+</usuario>
+<usuario estado="activo">
+  <apellido>Ruiz</apellido>
+  <nombre>Mario</nombre>
+  <fechaReg>24/03/2020</fechaReg>
+  <nick>marior</nick>
+  <fechaBaja>28/03/2020</fechaBaja>
+</usuario>
+<usuario estado="no-activo">
+  <apellido>Aguilar</apellido>
+  <nombre>Luis</nombre>
+  <fechaReg>25/03/2020</fechaReg>
+  <nick>aluis</nick>
+  <fechaBaja>30/03/2020</fechaBaja>
+</usuario>
+<usuario estado="activo">
+  <apellido>Jimenez</apellido>
+  <nombre>Guillermo</nombre>
+  <fechaReg>24/052020</fechaReg>
+  <nick>gj</nick>
+  <fechaBaja>28/07/2020</fechaBaja>
+</usuario>
+<usuario estado="no-activo">
+  <apellido>Garcia</apellido>
+  <nombre>Mario</nombre>
+  <fechaReg>28/03/2020</fechaReg>
+  <nick>mariog</nick>
+  <fechaBaja>28/04/2020</fechaBaja>
+</usuario>
+</usuarios>`;
+
+    var parser = new DOMParser();
+    var xmlDoc = parser.parseFromString(xmlStr, "text/xml");
+
+    var aPath = "/usuarios/usuario/apellido"
+    addResult(xmlDoc, aPath);
+
+    var bPath = "/usuarios/usuario[@estado='activo']/apellido"
+    addResult(xmlDoc, bPath);
+
+    var cPath = "/usuarios/usuario[1]/nombre"
+    addResult(xmlDoc, cPath);
+
+    function addResult(xml, path) {
+      var txt = "";
+      if (xml.evaluate) {
+        var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+        var result = nodes.iterateNext();
+        while (result) {
+          txt += result.childNodes[0].nodeValue + "<br>";
+          result = nodes.iterateNext();
+        }
+        // Code For Internet Explorer
+      } else if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
+        xml.setProperty("SelectionLanguage", "XPath");
+        nodes = xml.selectNodes(path);
+        for (i = 0; i < nodes.length; i++) {
+          txt += nodes[i].childNodes[0].nodeValue + "<br>";
+        }
+      }
+
+      txt += "<br>";
+
+      document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + txt;
+    }
+  </script>
+
+</body>
+
+</html>

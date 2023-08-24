@@ -1,0 +1,17 @@
+videojuegos {
+    display:table;
+    margin-left:20px;
+    margin-top:20px;
+    border-color:black;
+    border-width:1px;
+    border-style:solid;
+}
+
+videojuego {
+    display:table-row;
+}
+
+nombre, cod, consola, precio, web {
+    display:table-cell;
+    padding:5px;
+}

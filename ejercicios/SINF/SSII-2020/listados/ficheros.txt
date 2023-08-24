@@ -1,0 +1,50 @@
+ El volumen de la unidad C es 1DAM
+ El n£mero de serie del volumen es: C610-C70A
+
+ Directorio de C:\Users\1DAM
+
+26/10/2020  17:38    <DIR>          .
+26/10/2020  17:38    <DIR>          ..
+20/10/2020  13:17    <DIR>          .cache
+31/08/2020  11:18    <DIR>          .config
+14/09/2020  09:23    <DIR>          .dia
+21/10/2020  11:59    <DIR>          .dotnet
+31/08/2020  11:18    <DIR>          .eclipse
+31/08/2020  10:28               126 .gitconfig
+31/08/2020  11:01    <DIR>          .nbi
+31/08/2020  11:41    <DIR>          .openjfx
+31/08/2020  11:18    <DIR>          .p2
+19/10/2020  15:34    <DIR>          .templateengine
+31/08/2020  11:18    <DIR>          .tooling
+03/11/2020  15:56    <DIR>          .VirtualBox
+20/10/2020  07:51    <DIR>          3D Objects
+26/10/2020  16:09               497 CENEC
+26/10/2020  16:26               206 Compara2nros.psc
+26/10/2020  16:33               317 Compara2nrosMuchasVeces.psc
+20/10/2020  07:51    <DIR>          Contacts
+26/10/2020  16:59               109 ContarHastaDiez.psc
+05/11/2020  11:13    <DIR>          Desktop
+26/10/2020  17:38               258 DiasConIF.psc
+26/10/2020  17:35               383 DiasLaborables.psc
+10/11/2020  11:19    <DIR>          Documents
+05/11/2020  10:32    <DIR>          Downloads
+31/08/2020  11:14    <DIR>          eclipse
+31/08/2020  11:18    <DIR>          eclipse-workspace
+26/10/2020  16:18               204 ElMayor.psc
+20/10/2020  07:51    <DIR>          Favorites
+26/10/2020  17:27               146 LasTablas.psc
+20/10/2020  07:51    <DIR>          Links
+20/10/2020  07:51    <DIR>          Music
+30/10/2020  11:52    <DIR>          OneDrive
+31/08/2020  11:24    <DIR>          Oracle
+26/10/2020  16:08    <DIR>          Pictures
+09/11/2020  20:45    <DIR>          pseint
+20/10/2020  07:51    <DIR>          Saved Games
+20/10/2020  07:51    <DIR>          Searches
+19/10/2020  15:32    <DIR>          source
+26/10/2020  16:13               187 Suma2Nros.psc
+26/10/2020  16:51               312 SumarMientras.psc
+26/10/2020  16:59               109 TablaDelTres.psc
+20/10/2020  07:51    <DIR>          Videos
+              12 archivos          2.854 bytes
+              31 dirs  191.051.489.280 bytes libres

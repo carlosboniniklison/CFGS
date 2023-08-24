@@ -1,0 +1,13 @@
+C:\profesorcarlos.es\1DAW-EED\DibujarEnConsola\DibujarEnConsola\bin\Debug\netcoreapp3.1\DibujarEnConsola.exe
+C:\profesorcarlos.es\1DAW-EED\DibujarEnConsola\DibujarEnConsola\bin\Debug\netcoreapp3.1\DibujarEnConsola.deps.json
+C:\profesorcarlos.es\1DAW-EED\DibujarEnConsola\DibujarEnConsola\bin\Debug\netcoreapp3.1\DibujarEnConsola.runtimeconfig.json
+C:\profesorcarlos.es\1DAW-EED\DibujarEnConsola\DibujarEnConsola\bin\Debug\netcoreapp3.1\DibujarEnConsola.runtimeconfig.dev.json
+C:\profesorcarlos.es\1DAW-EED\DibujarEnConsola\DibujarEnConsola\bin\Debug\netcoreapp3.1\DibujarEnConsola.dll
+C:\profesorcarlos.es\1DAW-EED\DibujarEnConsola\DibujarEnConsola\bin\Debug\netcoreapp3.1\DibujarEnConsola.pdb
+C:\profesorcarlos.es\1DAW-EED\DibujarEnConsola\DibujarEnConsola\obj\Debug\netcoreapp3.1\DibujarEnConsola.csprojAssemblyReference.cache
+C:\profesorcarlos.es\1DAW-EED\DibujarEnConsola\DibujarEnConsola\obj\Debug\netcoreapp3.1\DibujarEnConsola.AssemblyInfoInputs.cache
+C:\profesorcarlos.es\1DAW-EED\DibujarEnConsola\DibujarEnConsola\obj\Debug\netcoreapp3.1\DibujarEnConsola.AssemblyInfo.cs
+C:\profesorcarlos.es\1DAW-EED\DibujarEnConsola\DibujarEnConsola\obj\Debug\netcoreapp3.1\DibujarEnConsola.csproj.CoreCompileInputs.cache
+C:\profesorcarlos.es\1DAW-EED\DibujarEnConsola\DibujarEnConsola\obj\Debug\netcoreapp3.1\DibujarEnConsola.dll
+C:\profesorcarlos.es\1DAW-EED\DibujarEnConsola\DibujarEnConsola\obj\Debug\netcoreapp3.1\DibujarEnConsola.pdb
+C:\profesorcarlos.es\1DAW-EED\DibujarEnConsola\DibujarEnConsola\obj\Debug\netcoreapp3.1\DibujarEnConsola.genruntimeconfig.cache

@@ -1,0 +1,14 @@
+
+nombre {
+    color:red;
+    font-size:xx-large;
+    display:block;
+}
+
+cod, consola, precio, web {
+    display:block;
+    margin-left:15px;
+    display: list-item;
+    list-style: disc inside;
+}
+

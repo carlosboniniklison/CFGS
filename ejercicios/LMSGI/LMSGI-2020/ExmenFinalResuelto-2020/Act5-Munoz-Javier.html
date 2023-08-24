@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<-- usar con Visual Studio o XAMPP -->
+<-- *** -->
+
+<!--Javier Muñoz Sánchez 1º DAM-M-->
+
+<html>
+    <body>
+
+        <p id="demo">Ejercicio 5</p>
+
+        <script>
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+            showResult(xhttp.responseXML);
+            }
+            };				      //usuarios.xml
+            xhttp.open("GET", "Act1-Javier-Munoz.xml", true); xhttp.send();
+            function showResult(xml) {
+            var txt = "";
+			
+            /* Estas con las rutas relativas XPath - Comentadas las rutas para W3Schools */
+            path = "/grupo/usuario/apellido"; // "/bookstore/book/title"
+			path2 ="//usuario[@estado='activo']/username"; // "//book[@category='web']/author"
+            path3 = "/grupo/usuario[1]/nombre"; // "/bookstore/book[1]/author"
+            path4 = "//*[@*]"; //Esta ruta es la misma para W3Schools
+
+
+            /* Este es el apartado A */
+            txt += "Todos los apellidos de usuarios" + "<br>";
+            if (xml.evaluate) {
+            var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+            var result = nodes.iterateNext();
+            while (result) {
+            txt += "<h3>" + result.childNodes[0].nodeValue + "</h3>";
+            result = nodes.iterateNext();
+            }
+
+            /* Este es el apartado B */
+            txt += "El username de todos los usuarios cuyo estado sea activo" + "<br>";
+            var nodes2 = xml.evaluate(path2, xml, null, XPathResult.ANY_TYPE, null);
+            var result2 = nodes.iterateNext();
+            while (result2) {
+            txt += "<h3>" + result2.childNodes[0].nodeValue + "</h3>";
+            result2 = nodes2.iterateNext();
+            }
+
+            /* Este es el apartado C */
+            txt += "<br>" + "El valor del segundo elemento del primer usuario" + "<br>";
+            var nodes3 = xml.evaluate(path3, xml, null, XPathResult.ANY_TYPE, null);
+            var result3 = nodes3.iterateNext();
+            while (result3) {
+            txt += "<h3>" + result3.childNodes[0].nodeValue + "</h3>";
+            result3 = nodes3.iterateNext();
+            }
+
+            /* Este es el apartado D */
+            txt += "<br>" + "El nombre y el valor de todos los elementos \n\
+            que tengan atributos" + "<br>";
+            var nodes4 = xml.evaluate(path4, xml, null, XPathResult.ANY_TYPE, null);
+            var result4 = nodes4.iterateNext();
+            while (result4) {
+            txt += "<h3>" + result4.nodeName + ": " + result.childNodes[0].nodeValue + "</h3>";
+            result4 = nodes4.iterateNext();
+            }
+            }
+            document.getElementById("demo").innerHTML = txt;
+            }
+        </script>
+
+
+
+<!--ESTA ES OTRA MANERA DE HACER EL EJERCICIO B (mediante jquery)-->
+
+		<script>
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				myFunction(this);
+			}
+		};				      // books.xml
+		xhttp.open("GET", "Act1-Javier-Munoz.xml", true);
+		xhttp.send();
+
+		function myFunction(xml) {
+			var x, i, xmlDoc, txt;
+			xmlDoc = xml.responseXML;
+			text = "";								     //book[category='web
+			const web_books = xmlDoc.querySelectorAll("usuario[estado='activo']");
+			const web_book_authors = {};
+
+			web_books.forEach(book => {         //title
+			  const title = book.querySelector('username').innerHTML;
+			  text += "<h3>" + title + "</h3>";
+			  
+			})
+
+
+			document.getElementById("demo").innerHTML = text; 
+		}
+		</script>
+<!--ESTA ES OTRA MANERA DE HACER EL EJERCICIO B (mediante jquery)-->
+
+    </body>
+</html>

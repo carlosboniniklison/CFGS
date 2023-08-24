@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumar dos números</title>
+
+</head>
+
+<body>
+    <h1 id="titulo">SUMAR DOS NUMEROS</h1>
+    <form>
+        <input type="number" min="1" max="9" id="nro1" placeholder="1..9"/>
+        <input type="number" min="1" max="9" id="nro2" placeholder="1..9"/>
+        <input type="button" onclick="calcular()" value="MULTIPLICARLOS"/>
+    </form>
+
+
+    <script>
+        function calcular(){
+            let n1 = document.getElementById("nro1").value;
+            let n2 = document.getElementById("nro2").value;
+            let producto=n1*n2;
+            window.alert(n1+" * "+n2+" = "+producto);            
+        }
+        
+    </script>
+</body>
+
+</html>

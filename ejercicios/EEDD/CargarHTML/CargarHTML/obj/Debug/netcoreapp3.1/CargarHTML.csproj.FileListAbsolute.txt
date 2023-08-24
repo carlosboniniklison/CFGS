@@ -1,0 +1,5 @@
+G:\xampp\htdocs\profesorcarlos.es\1DAM-EEDD\CargarHTML\CargarHTML\obj\Debug\netcoreapp3.1\CargarHTML.csprojAssemblyReference.cache
+G:\xampp\htdocs\profesorcarlos.es\1DAM-EEDD\CargarHTML\CargarHTML\obj\Debug\netcoreapp3.1\CargarHTML.csproj.CoreCompileInputs.cache
+G:\xampp\htdocs\profesorcarlos.es\1DAM-EEDD\CargarHTML\CargarHTML\obj\Debug\netcoreapp3.1\CargarHTML.MvcApplicationPartsAssemblyInfo.cache
+G:\xampp\htdocs\profesorcarlos.es\1DAM-EEDD\CargarHTML\CargarHTML\obj\Debug\netcoreapp3.1\CargarHTML.AssemblyInfoInputs.cache
+G:\xampp\htdocs\profesorcarlos.es\1DAM-EEDD\CargarHTML\CargarHTML\obj\Debug\netcoreapp3.1\CargarHTML.AssemblyInfo.cs
