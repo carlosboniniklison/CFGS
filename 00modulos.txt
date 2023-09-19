@@ -1,0 +1,36 @@
+https://www.juntadeandalucia.es/educacion/portals/galion/GUIA/GUIA_51.pdf
+https://www.juntadeandalucia.es/educacion/portals/galion/GUIA/GUIA_56.pdf
+
+
+1dax-
+0373-LMSGI-Lenguajes de Marcas y Sistemas de Gestion de Informacion
+0483-SI-Sistemas Informaticos
+0484-BD-Bases de Datos
+0485-PROG-Programacion
+0487-ED-Entornos de Desarrollo
+
+1dam-
+0493-FOL-Formacion y Orientacion Laboral
+
+1daw-
+0617-FOL-Formacion y Orientacion Laboral
+
+2dam-
+0486-AD-Acceso a Datos
+0488-DI-Desarrollo de Interfaces
+0489-PMDM-Programacion Multimedia y Dispositivos Moviles
+0490-PSP-Programacion de Servicios y Procesos
+0491-SGE-Sistemas de Gestion Empresarial
+0492-PDAM-Proyecto de Desarrollo de Aplicaciones Multiplataforma
+0494-EIE-Empresa e Iniciativa Emprendedora
+0495-FCT-Formacion en Centros de Trabajo
+
+2daw-
+0612-DWEC-Desarrollo Web en Entorno Cliente
+0613-DWES-Desarrollo Web en Entorno Servidor
+0614-DAW-Despliegue de Aplicaciones Web
+0615-DIW-Diseño de Interfaces Web
+0616-PDAW-Proyecto de Desarrollo de Aplicaciones Web
+0618-EIE-Empresa e Iniciativa Emprendedora
+0619-FCT-Formacion en Centros de Trabajo
+
